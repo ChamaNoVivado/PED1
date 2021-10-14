@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Oct 10 18:43:28 2021
+# Process ID: 6984
+# Current directory: C:/Users/Caetano/Desktop/PED1/Semana 10/Trabalho_4_Grupo_12/Semana10_Trabalho4.runs/synth_1
+# Command line: vivado.exe -log main.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source main.tcl
+# Log file: C:/Users/Caetano/Desktop/PED1/Semana 10/Trabalho_4_Grupo_12/Semana10_Trabalho4.runs/synth_1/main.vds
+# Journal file: C:/Users/Caetano/Desktop/PED1/Semana 10/Trabalho_4_Grupo_12/Semana10_Trabalho4.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source main.tcl -notrace

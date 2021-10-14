@@ -1,0 +1,8 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Caetano/Desktop/PED1/Semana 10/Trabalho_4_Grupo_12/Semana10_Trabalho4.srcs/sources_1/new/display7segmentos_DP_C2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'display7Segmentos_DP_C2'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Caetano/Desktop/PED1/Semana 10/Trabalho_4_Grupo_12/Semana10_Trabalho4.srcs/sources_1/new/logica_de_selecao.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'logica_de_selecao'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Caetano/Desktop/PED1/Semana 10/Trabalho_4_Grupo_12/Semana10_Trabalho4.srcs/sources_1/new/main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'main'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Caetano/Desktop/PED1/Semana 10/Trabalho_4_Grupo_12/Semana10_Trabalho4.srcs/sources_1/new/mux4x1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mux4x1'

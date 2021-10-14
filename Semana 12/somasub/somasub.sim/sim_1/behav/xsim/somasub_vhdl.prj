@@ -1,0 +1,10 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../somasub.srcs/sources_1/new/inversor.vhd" \
+"../../../../somasub.srcs/sources_1/new/mux2x1.vhd" \
+"../../../../somasub.srcs/sources_1/new/somador.vhd" \
+"../../../../somasub.srcs/sources_1/new/somador4.vhd" \
+"../../../../somasub.srcs/sources_1/new/somasub.vhd" \
+
+# Do not sort compile order
+nosort

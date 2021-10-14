@@ -1,0 +1,182 @@
+/*
+
+Xilinx Vivado v2020.2 (64-bit) [Major: 2020, Minor: 2]
+SW Build: 3064766 on Wed Nov 18 09:12:45 MST 2020
+IP Build: 3064653 on Wed Nov 18 14:17:31 MST 2020
+
+Process ID (PID): 1036
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Sun Oct 10 15:48:26 BRT 2021
+Time zone: 	Brasilia Standard Time (America/Sao_Paulo)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1366x768
+Screen resolution (DPI): 100
+Available screens: 2
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+
+Java version: 	11.0.2 64-bit
+Java home: 	C:/Xilinx/Vivado/2020.2/tps/win64/jre11.0.2
+Java executable location: 	C:/Xilinx/Vivado/2020.2/tps/win64/jre11.0.2/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	Caetano
+User home directory: C:/Users/Caetano
+User working directory: C:/Users/Caetano/Desktop/PED1/Semana 11/exer.semana_universitaria/exemplo_11
+User country: 	BR
+User language: 	pt
+User locale: 	pt_BR
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2020.2
+RDI_DATADIR: C:/Xilinx/Vivado/2020.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2020.2/bin
+
+Vivado preferences file location: C:/Users/Caetano/AppData/Roaming/Xilinx/Vivado/2020.2/vivado.xml
+Vivado preferences directory: C:/Users/Caetano/AppData/Roaming/Xilinx/Vivado/2020.2/
+Vivado layouts directory: C:/Users/Caetano/AppData/Roaming/Xilinx/Vivado/2020.2/data/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2020.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/Caetano/Desktop/PED1/Semana 11/exer.semana_universitaria/exemplo_11/vivado.log
+Vivado journal file location: 	C:/Users/Caetano/Desktop/PED1/Semana 11/exer.semana_universitaria/exemplo_11/vivado.jou
+Engine tmp dir: 	C:/Users/Caetano/Desktop/PED1/Semana 11/exer.semana_universitaria/exemplo_11/.Xil/Vivado-1036-DESKTOP-0VQB5DC
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_HLS: C:/Xilinx/Vitis_HLS/2020.2
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2020.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2020.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2020.2
+
+
+GUI allocated memory:	128 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,013 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// WARNING: HEventQueue.dispatchEvent() is taking  1909 ms.
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bz (cr):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\Caetano\Desktop\PED1\Semana 11\exer.semana_universitaria\exemplo_11\exemplo_11.xpr. Version: Vivado v2020.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,013 MB. GUI used memory: 61 MB. Current time: 10/10/21, 3:48:29 PM BRT
+// Tcl Message: open_project {C:/Users/Caetano/Desktop/PED1/Semana 11/exer.semana_universitaria/exemplo_11/exemplo_11.xpr} 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/micka/OneDrive/rea de Trabalho/exer.semana_universitaria/exemplo_11' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 80 MB (+81515kb) [00:00:47]
+// [Engine Memory]: 1,013 MB (+911018kb) [00:00:47]
+// [GUI Memory]: 110 MB (+26707kb) [00:00:49]
+// [GUI Memory]: 117 MB (+2399kb) [00:00:54]
+// WARNING: HEventQueue.dispatchEvent() is taking  2260 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1587 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:46 ; elapsed = 00:00:23 . Memory (MB): peak = 1000.918 ; gain = 0.000 
+// Project name: exemplo_11; location: C:/Users/Caetano/Desktop/PED1/Semana 11/exer.semana_universitaria/exemplo_11; part: xc7a35tcpg236-1
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 470ms to process. Increasing delay to 3000 ms.
+dismissDialog("Open Project"); // bz
+// [GUI Memory]: 131 MB (+8389kb) [00:01:03]
+// WARNING: HEventQueue.dispatchEvent() is taking  1397 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1142 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1104 ms.
+// Tcl Message: update_compile_order -fileset sources_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,013 MB. GUI used memory: 73 MB. Current time: 10/10/21, 4:18:28 PM BRT
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1690 ms. Increasing delay to 5070 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3187 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1611 ms. Increasing delay to 3000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,013 MB. GUI used memory: 64 MB. Current time: 10/10/21, 4:48:31 PM BRT
+// WARNING: HEventQueue.dispatchEvent() is taking  1491 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1125 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,013 MB. GUI used memory: 64 MB. Current time: 10/10/21, 5:18:31 PM BRT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,013 MB. GUI used memory: 64 MB. Current time: 10/10/21, 5:48:32 PM BRT
+// PAPropertyPanels.initPanels (clock_menor.vhd) elapsed time: 0.3s
+// Elapsed time: 7894 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, clock_menor(Behavioral) (clock_menor.vhd)]", 3, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, clock_menor(Behavioral) (clock_menor.vhd)]", 3, false, false, false, false, false, true); // D - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, BCD_7seg(Behavioral) (BCD_7seg.vhd)]", 1, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, BCD_7seg(Behavioral) (BCD_7seg.vhd)]", 1, false, false, false, false, false, true); // D - Double Click
+// WARNING: HEventQueue.dispatchEvent() is taking  1080 ms.
+selectButton(RDIResourceCommand.RDICommands_SETTINGS, "settings"); // E
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// d (cr): Settings: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1595 ms.
+selectTree(PAResourceQtoS.SettingsDialog_OPTIONS_TREE, "[optionsRoot, Text Editor]", 7, true); // B - Node
+expandTree(PAResourceQtoS.SettingsDialog_OPTIONS_TREE, "[optionsRoot, Text Editor]", 7); // B
+selectTree(PAResourceQtoS.SettingsDialog_OPTIONS_TREE, "[optionsRoot, Text Editor]", 7, true, false, false, false, false, true); // B - Double Click - Node
+selectTree(PAResourceQtoS.SettingsDialog_OPTIONS_TREE, "[optionsRoot, Text Editor, Fonts and Colors]", 11, false); // B
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// WARNING: HEventQueue.dispatchEvent() is taking  1291 ms.
+dismissDialog("Settings"); // d
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "BCD_7seg.vhd", 2); // m
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "BCD_7seg.vhd", 2, false, true); // m - Double Click
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // N
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // az
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clock_menor.vhd", 1); // m
+// Elapsed time: 18 seconds
+selectCodeEditor("clock_menor.vhd", 517, 253); // bP
+// Elapsed time: 21 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, clock_maior(Behavioral) (clock_maior.vhd)]", 2, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, clock_maior(Behavioral) (clock_maior.vhd)]", 2, false, false, false, false, false, true); // D - Double Click
+// Elapsed time: 14 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mux4X1(Behavioral) (mux 4X1.vhd)]", 4, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mux4X1(Behavioral) (mux 4X1.vhd)]", 4, false, false, false, false, false, true); // D - Double Click
+selectCodeEditor("mux 4X1.vhd", 412, 183); // bP
+selectCodeEditor("mux 4X1.vhd", 356, 233); // bP
+selectCodeEditor("mux 4X1.vhd", 485, 450); // bP
+selectCodeEditor("mux 4X1.vhd", 451, 588); // bP
+selectCodeEditor("mux 4X1.vhd", 487, 536); // bP
+// Elapsed time: 29 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true); // u - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN
+// A (cr): Elaborate Design: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// bz (cr):  Open Elaborated Design : addNotify
+dismissDialog("Elaborate Design"); // A
+// Tcl Message: synth_design -rtl -rtl_skip_mlo -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -rtl_skip_mlo -name rtl_1 Starting synth_design Using part: xc7a35tcpg236-1 Top: BCD_7seg 
+// Elapsed time: 10 seconds
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a
+// TclEventType: ELABORATE_START
+// TclEventType: ELABORATE_FAIL
+// TclEventType: DESIGN_NEW_FAILED
+// Tcl Message: INFO: [Device 21-403] Loading part xc7a35tcpg236-1 INFO: [Common 17-41] Interrupt caught. Command should exit soon. 
+// Tcl Message: 2 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered. synth_design completed successfully 
+// Tcl Message: synth_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 1000.918 ; gain = 0.000 
+// Tcl Message: INFO: [Common 17-344] 'synth_design' was cancelled 
+// CommandFailedException: ERROR: [Common 17-69] Command failed:  
+// 'dV' command handler elapsed time: 16 seconds
+dismissDialog("Open Elaborated Design"); // bz

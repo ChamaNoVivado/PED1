@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Webtalk v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Oct  6 19:36:18 2021
+# Process ID: 14348
+# Current directory: C:/Users/Caetano/Desktop/PED1/Semana 10/Trabalho_4_Grupo_12/Semana10_Trabalho4.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/Caetano/Desktop/PED1/Semana 10/Trabalho_4_Grupo_12/Semana10_Trabalho4.sim/sim_1/behav/xsim/xsim.dir/main_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/Caetano/Desktop/PED1/Semana 10/Trabalho_4_Grupo_12/Semana10_Trabalho4.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: C:/Users/Caetano/Desktop/PED1/Semana 10/Trabalho_4_Grupo_12/Semana10_Trabalho4.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/Caetano/Desktop/PED1/Semana -notrace
+couldn't read file "C:/Users/Caetano/Desktop/PED1/Semana": no such file or directory
+INFO: [Common 17-206] Exiting Webtalk at Wed Oct  6 19:36:18 2021...

@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Oct 14 19:14:06 2021
+# Process ID: 12788
+# Current directory: C:/Users/Caetano/Desktop/PED1/Semana 13/FFS/FFS/FFS
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11696 C:\Users\Caetano\Desktop\PED1\Semana 13\FFS\FFS\FFS\FFS.xpr
+# Log file: C:/Users/Caetano/Desktop/PED1/Semana 13/FFS/FFS/FFS/vivado.log
+# Journal file: C:/Users/Caetano/Desktop/PED1/Semana 13/FFS/FFS/FFS\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Caetano/Desktop/PED1/Semana 13/FFS/FFS/FFS/FFS.xpr}
+update_compile_order -fileset sources_1

@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Caetano/Desktop/PED1/Semana 11/somadorsub/somadorsub/somador/somador.srcs/sources_1/new/somasub.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'somasub'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Caetano/Desktop/PED1/Semana 11/somadorsub/somadorsub/somador/somador.srcs/sources_1/new/somasub4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'somasub4'

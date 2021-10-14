@@ -1,0 +1,53 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Sep 24 17:18:09 2021
+# Process ID: 14240
+# Current directory: C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11208 C:\Users\Caetano\Desktop\PED1\Semana 10\Grupo12_Semana10_Trabalho4\Semana10_Trabalho4.xpr
+# Log file: C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/vivado.log
+# Journal file: C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.xpr}
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:44 ; elapsed = 00:00:14 . Memory (MB): peak = 999.297 ; gain = 0.000
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Sep 24 17:59:39 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.runs/synth_1/runme.log
+[Fri Sep 24 17:59:39 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Sep 24 18:00:19 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.runs/synth_1/runme.log
+[Fri Sep 24 18:00:19 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Fri Sep 24 19:51:09 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.runs/synth_1/runme.log
+set_property is_enabled false [get_files  {{C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/sources_1/new/logica_de_selecao.vhd}}]
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Fri Sep 24 20:01:35 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Fri Sep 24 20:04:46 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.runs/synth_1/runme.log
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Sep 24 20:16:15 2021...

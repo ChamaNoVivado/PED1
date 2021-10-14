@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Oct  6 19:40:46 2021
+# Process ID: 11832
+# Current directory: C:/Users/Caetano/Desktop/PED1/Semana 11/somadorsub/somadorsub/somador
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17788 C:\Users\Caetano\Desktop\PED1\Semana 11\somadorsub\somadorsub\somador\somador.xpr
+# Log file: C:/Users/Caetano/Desktop/PED1/Semana 11/somadorsub/somadorsub/somador/vivado.log
+# Journal file: C:/Users/Caetano/Desktop/PED1/Semana 11/somadorsub/somadorsub/somador\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Caetano/Desktop/PED1/Semana 11/somadorsub/somadorsub/somador/somador.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+source somasub4_tb.tcl
+restart
+run 700 ns
+save_wave_config {C:/Users/Caetano/Desktop/PED1/Semana 11/somadorsub/somadorsub/somador/somasub4_tb_behav.wcfg}
+add_files -fileset sim_1 -norecurse {{C:/Users/Caetano/Desktop/PED1/Semana 11/somadorsub/somadorsub/somador/somasub4_tb_behav.wcfg}}
+set_property xsim.view {{C:/Users/Caetano/Desktop/PED1/Semana 11/somadorsub/somadorsub/somador/somasub4_tb_behav.wcfg}} [get_filesets sim_1]
+close_sim
+close_project

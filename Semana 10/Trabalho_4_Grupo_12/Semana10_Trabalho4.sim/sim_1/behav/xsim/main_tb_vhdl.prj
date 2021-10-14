@@ -1,0 +1,10 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Semana10_Trabalho4.srcs/sources_1/new/display7segmentos_DP_C2.vhd" \
+"../../../../Semana10_Trabalho4.srcs/sources_1/new/logica_de_selecao.vhd" \
+"../../../../Semana10_Trabalho4.srcs/sources_1/new/main.vhd" \
+"../../../../Semana10_Trabalho4.srcs/sources_1/new/mux4x1.vhd" \
+"../../../../Semana10_Trabalho4.srcs/sim_1/new/main_tb.vhd" \
+
+# Do not sort compile order
+nosort

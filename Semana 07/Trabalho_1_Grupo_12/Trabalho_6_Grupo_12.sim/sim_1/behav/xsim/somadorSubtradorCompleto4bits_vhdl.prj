@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Trabalho_6_Grupo_12.srcs/sources_1/new/detectorDeOverflow.vhd" \
+"../../../../Trabalho_6_Grupo_12.srcs/sources_1/new/somadorCompleto1bit.vhd" \
+"../../../../Trabalho_6_Grupo_12.srcs/sources_1/new/somadorSubtradorCompleto4bits.vhd" \
+
+# Do not sort compile order
+nosort

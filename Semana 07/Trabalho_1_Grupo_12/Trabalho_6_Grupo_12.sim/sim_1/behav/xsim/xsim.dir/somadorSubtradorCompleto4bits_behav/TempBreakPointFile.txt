@@ -1,0 +1,2 @@
+Breakpoint File Version 1.0
+38,true,"C:/Users/Caetano/Desktop/PED1/Semana 7/Trabalho_1_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/somadorSubtradorCompleto4bits.vhd"

@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Oct 10 19:17:40 2021
+# Process ID: 6808
+# Current directory: C:/Users/Caetano/Desktop/PED1/Semana 12/somasub
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2080 C:\Users\Caetano\Desktop\PED1\Semana 12\somasub\somasub.xpr
+# Log file: C:/Users/Caetano/Desktop/PED1/Semana 12/somasub/vivado.log
+# Journal file: C:/Users/Caetano/Desktop/PED1/Semana 12/somasub\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Caetano/Desktop/PED1/Semana 12/somasub/somasub.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/micka/OneDrive/rea de Trabalho/somasub2/somasub' since last save.
+WARNING: [filemgmt 56-2] Default IP Output Path : Could not find the directory 'C:/Users/Caetano/Desktop/PED1/Semana 12/somasub/somasub.gen/sources_1', nor could it be found using path 'C:/Users/micka/OneDrive/rea de Trabalho/somasub2/somasub/somasub.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:27 ; elapsed = 00:00:13 . Memory (MB): peak = 985.559 ; gain = 0.000
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Oct 10 22:14:45 2021...

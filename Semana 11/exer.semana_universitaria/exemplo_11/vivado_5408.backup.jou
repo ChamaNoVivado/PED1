@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Oct  6 16:47:27 2021
+# Process ID: 5408
+# Current directory: C:/Users/Caetano/Desktop/PED1/Semana 11/exer.semana_universitaria/exemplo_11
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7892 C:\Users\Caetano\Desktop\PED1\Semana 11\exer.semana_universitaria\exemplo_11\exemplo_11.xpr
+# Log file: C:/Users/Caetano/Desktop/PED1/Semana 11/exer.semana_universitaria/exemplo_11/vivado.log
+# Journal file: C:/Users/Caetano/Desktop/PED1/Semana 11/exer.semana_universitaria/exemplo_11\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Caetano/Desktop/PED1/Semana 11/exer.semana_universitaria/exemplo_11/exemplo_11.xpr}
+update_compile_order -fileset sources_1

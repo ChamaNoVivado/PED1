@@ -1,0 +1,7 @@
+Running: xsim.dir/Questao2_behav/xsimk.exe -simmode gui -wdb Questao2_behav.wdb -simrunnum 0 -socket 55253
+Design successfully loaded
+Design Loading Memory Usage: 6188 KB (Peak: 6188 KB)
+Design Loading CPU Usage: 31 ms
+Simulation completed
+Simulation Memory Usage: 6752 KB (Peak: 6752 KB)
+Simulation CPU Usage: 46 ms

@@ -1,0 +1,28 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Oct  6 16:48:23 2021
+# Process ID: 16416
+# Current directory: C:/Users/Caetano/Desktop/PED1/Semana 11/somadorsub/somadorsub/somador
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13604 C:\Users\Caetano\Desktop\PED1\Semana 11\somadorsub\somadorsub\somador\somador.xpr
+# Log file: C:/Users/Caetano/Desktop/PED1/Semana 11/somadorsub/somadorsub/somador/vivado.log
+# Journal file: C:/Users/Caetano/Desktop/PED1/Semana 11/somadorsub/somadorsub/somador\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Caetano/Desktop/PED1/Semana 11/somadorsub/somadorsub/somador/somador.xpr}
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top somasub4_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+import_files -fileset sim_1 -norecurse {{C:/Users/Caetano/Desktop/PED1/Semana 11/somadorsub/somadorsub/somador/somador.srcs/sim_1/new/somasub4_tb.vhd}}
+set_property used_in_simulation false [get_files  {{C:/Users/Caetano/Desktop/PED1/Semana 11/somadorsub/somadorsub/somador/somador.srcs/sources_1/new/somasub4.vhd}}]
+set_property used_in_simulation false [get_files  {{C:/Users/Caetano/Desktop/PED1/Semana 11/somadorsub/somadorsub/somador/somador.srcs/sources_1/new/somasub.vhd}}]

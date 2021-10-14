@@ -1,0 +1,1 @@
+-wto "99ef4fd80dc846fca07163b194e9205b" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "tb_somasub_behav" "xil_defaultlib.tb_somasub" -log "elaborate.log" 

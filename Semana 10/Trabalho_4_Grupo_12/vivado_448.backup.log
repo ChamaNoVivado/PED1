@@ -1,0 +1,996 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Sep 24 12:31:02 2021
+# Process ID: 448
+# Current directory: C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10592 C:\Users\Caetano\Desktop\PED1\Semana 10\Grupo12_Semana10_Trabalho4\Semana10_Trabalho4.xpr
+# Log file: C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/vivado.log
+# Journal file: C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/Caetano/Desktop/PED1/Semana 10/Semana10_Trabalho4' since last save.
+WARNING: [filemgmt 56-2] Default IP Output Path : Could not find the directory 'C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.gen/sources_1', nor could it be found using path 'C:/Users/Caetano/Desktop/PED1/Semana 10/Semana10_Trabalho4/Semana10_Trabalho4.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:52 ; elapsed = 00:00:25 . Memory (MB): peak = 999.348 ; gain = 0.000
+update_compile_order -fileset sources_1
+close_project
+open_project {C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/Caetano/Desktop/PED1/Semana 10/Semana10_Trabalho4' since last save.
+WARNING: [filemgmt 56-2] Default IP Output Path : Could not find the directory 'C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.gen/sources_1', nor could it be found using path 'C:/Users/Caetano/Desktop/PED1/Semana 10/Semana10_Trabalho4/Semana10_Trabalho4.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+update_compile_order -fileset sources_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: main
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1208.953 ; gain = 209.605
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'main' [C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/sources_1/new/main.vhd:12]
+INFO: [Synth 8-3491] module 'mux8x4' declared at 'C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/sources_1/new/mux8x4.vhd:4' bound to instance 'mux' of component 'mux8x4' [C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/sources_1/new/main.vhd:31]
+INFO: [Synth 8-638] synthesizing module 'mux8x4' [C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/sources_1/new/mux8x4.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'mux8x4' (1#1) [C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/sources_1/new/mux8x4.vhd:11]
+INFO: [Synth 8-3491] module 'display7Segmentos' declared at 'C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/sources_1/new/display7Segmentos.vhd:4' bound to instance 'display' of component 'display7Segmentos' [C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/sources_1/new/main.vhd:32]
+INFO: [Synth 8-638] synthesizing module 'display7Segmentos' [C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/sources_1/new/display7Segmentos.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'display7Segmentos' (2#1) [C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/sources_1/new/display7Segmentos.vhd:10]
+INFO: [Synth 8-226] default block is never used [C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/sources_1/new/main.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'main' (3#1) [C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/sources_1/new/main.vhd:12]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1285.305 ; gain = 285.957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1298.332 ; gain = 298.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1298.332 ; gain = 298.984
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1298.332 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1338.355 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:23 ; elapsed = 00:00:15 . Memory (MB): peak = 1406.852 ; gain = 407.504
+12 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:24 . Memory (MB): peak = 1406.852 ; gain = 407.504
+close [ open {C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/sources_1/new/logica_de_selecao.vhd} w ]
+add_files {{C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/sources_1/new/logica_de_selecao.vhd}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'main_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj main_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/sources_1/new/display7Segmentos.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'display7Segmentos'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/sources_1/new/logica_de_selecao.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'logica_de_selecao'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/sources_1/new/mux8x4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mux8x4'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/sim_1/new/main_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'main_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.sim/sim_1/behav/xsim'
+"xelab -wto 6b67e97843bf4726afa244ad4a711332 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot main_tb_behav xil_defaultlib.main_tb -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 6b67e97843bf4726afa244ad4a711332 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot main_tb_behav xil_defaultlib.main_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-3311] expression has 4 elements ; formal 'an' expects 3 [C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/sim_1/new/main_tb.vhd:41]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit main_tb in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1443.059 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+close_design
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'main_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj main_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.sim/sim_1/behav/xsim'
+"xelab -wto 6b67e97843bf4726afa244ad4a711332 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot main_tb_behav xil_defaultlib.main_tb -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 6b67e97843bf4726afa244ad4a711332 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot main_tb_behav xil_defaultlib.main_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-3311] expression has 4 elements ; formal 'an' expects 3 [C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/sim_1/new/main_tb.vhd:41]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit main_tb in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'main_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj main_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/sim_1/new/main_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'main_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.sim/sim_1/behav/xsim'
+"xelab -wto 6b67e97843bf4726afa244ad4a711332 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot main_tb_behav xil_defaultlib.main_tb -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 6b67e97843bf4726afa244ad4a711332 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot main_tb_behav xil_defaultlib.main_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.mux8x4 [mux8x4_default]
+Compiling architecture behavioral of entity xil_defaultlib.display7Segmentos [display7segmentos_default]
+Compiling architecture behavioral of entity xil_defaultlib.logica_de_selecao [logica_de_selecao_default]
+Compiling architecture behavioral of entity xil_defaultlib.main_tb
+Built simulation snapshot main_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1456.395 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "main_tb_behav -key {Behavioral:sim_1:Functional:main_tb} -tclbatch {main_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source main_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'main_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 1456.395 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 3200 ns
+add_files -fileset constrs_1 -norecurse {{C:/Users/Caetano/Downloads/Telegram Desktop/Basys3_Master.xdc}}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'main_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj main_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/sim_1/new/main_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'main_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.sim/sim_1/behav/xsim'
+"xelab -wto 6b67e97843bf4726afa244ad4a711332 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot main_tb_behav xil_defaultlib.main_tb -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 6b67e97843bf4726afa244ad4a711332 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot main_tb_behav xil_defaultlib.main_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.mux8x4 [mux8x4_default]
+Compiling architecture behavioral of entity xil_defaultlib.display7Segmentos [display7segmentos_default]
+Compiling architecture behavioral of entity xil_defaultlib.logica_de_selecao [logica_de_selecao_default]
+Compiling architecture behavioral of entity xil_defaultlib.main_tb
+Built simulation snapshot main_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "main_tb_behav -key {Behavioral:sim_1:Functional:main_tb} -tclbatch {main_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source main_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'main_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1456.395 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'main_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj main_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/sources_1/new/logica_de_selecao.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'logica_de_selecao'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.sim/sim_1/behav/xsim'
+"xelab -wto 6b67e97843bf4726afa244ad4a711332 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot main_tb_behav xil_defaultlib.main_tb -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 6b67e97843bf4726afa244ad4a711332 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot main_tb_behav xil_defaultlib.main_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.mux8x4 [mux8x4_default]
+Compiling architecture behavioral of entity xil_defaultlib.display7Segmentos [display7segmentos_default]
+Compiling architecture behavioral of entity xil_defaultlib.logica_de_selecao [logica_de_selecao_default]
+Compiling architecture behavioral of entity xil_defaultlib.main_tb
+Built simulation snapshot main_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "main_tb_behav -key {Behavioral:sim_1:Functional:main_tb} -tclbatch {main_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source main_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'main_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1456.395 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 3200 ns
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: main
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1456.395 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'main' [C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/sources_1/new/main.vhd:12]
+INFO: [Synth 8-3491] module 'mux8x4' declared at 'C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/sources_1/new/mux8x4.vhd:4' bound to instance 'mux' of component 'mux8x4' [C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/sources_1/new/main.vhd:35]
+INFO: [Synth 8-638] synthesizing module 'mux8x4' [C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/sources_1/new/mux8x4.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'mux8x4' (1#1) [C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/sources_1/new/mux8x4.vhd:11]
+INFO: [Synth 8-3491] module 'display7Segmentos' declared at 'C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/sources_1/new/display7Segmentos.vhd:4' bound to instance 'display' of component 'display7Segmentos' [C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/sources_1/new/main.vhd:36]
+INFO: [Synth 8-638] synthesizing module 'display7Segmentos' [C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/sources_1/new/display7Segmentos.vhd:9]
+INFO: [Synth 8-256] done synthesizing module 'display7Segmentos' (2#1) [C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/sources_1/new/display7Segmentos.vhd:9]
+INFO: [Synth 8-3491] module 'logica_de_selecao' declared at 'C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/sources_1/new/logica_de_selecao.vhd:4' bound to instance 'seletor' of component 'logica_de_selecao' [C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/sources_1/new/main.vhd:37]
+INFO: [Synth 8-638] synthesizing module 'logica_de_selecao' [C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/sources_1/new/logica_de_selecao.vhd:9]
+INFO: [Synth 8-226] default block is never used [C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/sources_1/new/logica_de_selecao.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'logica_de_selecao' (3#1) [C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/sources_1/new/logica_de_selecao.vhd:9]
+INFO: [Synth 8-256] done synthesizing module 'main' (4#1) [C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/sources_1/new/main.vhd:12]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1456.395 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1456.395 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1456.395 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1456.395 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Caetano/Downloads/Telegram Desktop/Basys3_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'mainB[4]'. [C:/Users/Caetano/Downloads/Telegram Desktop/Basys3_Master.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Caetano/Downloads/Telegram Desktop/Basys3_Master.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'mainB[4]'. [C:/Users/Caetano/Downloads/Telegram Desktop/Basys3_Master.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Caetano/Downloads/Telegram Desktop/Basys3_Master.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'mainB[5]'. [C:/Users/Caetano/Downloads/Telegram Desktop/Basys3_Master.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Caetano/Downloads/Telegram Desktop/Basys3_Master.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'mainB[5]'. [C:/Users/Caetano/Downloads/Telegram Desktop/Basys3_Master.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Caetano/Downloads/Telegram Desktop/Basys3_Master.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'mainB[6]'. [C:/Users/Caetano/Downloads/Telegram Desktop/Basys3_Master.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Caetano/Downloads/Telegram Desktop/Basys3_Master.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'mainB[6]'. [C:/Users/Caetano/Downloads/Telegram Desktop/Basys3_Master.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Caetano/Downloads/Telegram Desktop/Basys3_Master.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'mainB[7]'. [C:/Users/Caetano/Downloads/Telegram Desktop/Basys3_Master.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Caetano/Downloads/Telegram Desktop/Basys3_Master.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'mainB[7]'. [C:/Users/Caetano/Downloads/Telegram Desktop/Basys3_Master.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Caetano/Downloads/Telegram Desktop/Basys3_Master.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'mainAn[0]'. [C:/Users/Caetano/Downloads/Telegram Desktop/Basys3_Master.xdc:100]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Caetano/Downloads/Telegram Desktop/Basys3_Master.xdc:100]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'mainAn[0]'. [C:/Users/Caetano/Downloads/Telegram Desktop/Basys3_Master.xdc:101]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Caetano/Downloads/Telegram Desktop/Basys3_Master.xdc:101]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'mainAn[1]'. [C:/Users/Caetano/Downloads/Telegram Desktop/Basys3_Master.xdc:102]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Caetano/Downloads/Telegram Desktop/Basys3_Master.xdc:102]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'mainAn[1]'. [C:/Users/Caetano/Downloads/Telegram Desktop/Basys3_Master.xdc:103]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Caetano/Downloads/Telegram Desktop/Basys3_Master.xdc:103]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'mainAn[2]'. [C:/Users/Caetano/Downloads/Telegram Desktop/Basys3_Master.xdc:104]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Caetano/Downloads/Telegram Desktop/Basys3_Master.xdc:104]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'mainAn[2]'. [C:/Users/Caetano/Downloads/Telegram Desktop/Basys3_Master.xdc:105]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Caetano/Downloads/Telegram Desktop/Basys3_Master.xdc:105]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'mainAn[3]'. [C:/Users/Caetano/Downloads/Telegram Desktop/Basys3_Master.xdc:106]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Caetano/Downloads/Telegram Desktop/Basys3_Master.xdc:106]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'mainAn[3]'. [C:/Users/Caetano/Downloads/Telegram Desktop/Basys3_Master.xdc:107]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Caetano/Downloads/Telegram Desktop/Basys3_Master.xdc:107]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/Caetano/Downloads/Telegram Desktop/Basys3_Master.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1487.492 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:12 . Memory (MB): peak = 1490.898 ; gain = 34.504
+14 Infos, 16 Warnings, 16 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:13 . Memory (MB): peak = 1490.898 ; gain = 34.504
+launch_runs synth_1 -jobs 2
+[Fri Sep 24 14:23:11 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.runs/synth_1/runme.log
+set_property used_in_synthesis false [get_files  {{C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/sim_1/new/main_tb.vhd}}]
+set_property used_in_synthesis true [get_files  {{C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/sim_1/new/main_tb.vhd}}]
+set_property used_in_synthesis false [get_files  {{C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/sim_1/new/main_tb.vhd}}]
+launch_runs impl_1 -jobs 2
+[Fri Sep 24 14:24:37 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.runs/impl_1/runme.log
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tcpg236-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1524.852 ; gain = 0.000
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/Caetano/Downloads/Telegram Desktop/Basys3_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'mainB[4]'. [C:/Users/Caetano/Downloads/Telegram Desktop/Basys3_Master.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Caetano/Downloads/Telegram Desktop/Basys3_Master.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'mainB[4]'. [C:/Users/Caetano/Downloads/Telegram Desktop/Basys3_Master.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Caetano/Downloads/Telegram Desktop/Basys3_Master.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'mainB[5]'. [C:/Users/Caetano/Downloads/Telegram Desktop/Basys3_Master.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Caetano/Downloads/Telegram Desktop/Basys3_Master.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'mainB[5]'. [C:/Users/Caetano/Downloads/Telegram Desktop/Basys3_Master.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Caetano/Downloads/Telegram Desktop/Basys3_Master.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'mainB[6]'. [C:/Users/Caetano/Downloads/Telegram Desktop/Basys3_Master.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Caetano/Downloads/Telegram Desktop/Basys3_Master.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'mainB[6]'. [C:/Users/Caetano/Downloads/Telegram Desktop/Basys3_Master.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Caetano/Downloads/Telegram Desktop/Basys3_Master.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'mainB[7]'. [C:/Users/Caetano/Downloads/Telegram Desktop/Basys3_Master.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Caetano/Downloads/Telegram Desktop/Basys3_Master.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'mainB[7]'. [C:/Users/Caetano/Downloads/Telegram Desktop/Basys3_Master.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Caetano/Downloads/Telegram Desktop/Basys3_Master.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'mainAn[0]'. [C:/Users/Caetano/Downloads/Telegram Desktop/Basys3_Master.xdc:100]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Caetano/Downloads/Telegram Desktop/Basys3_Master.xdc:100]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'mainAn[0]'. [C:/Users/Caetano/Downloads/Telegram Desktop/Basys3_Master.xdc:101]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Caetano/Downloads/Telegram Desktop/Basys3_Master.xdc:101]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'mainAn[1]'. [C:/Users/Caetano/Downloads/Telegram Desktop/Basys3_Master.xdc:102]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Caetano/Downloads/Telegram Desktop/Basys3_Master.xdc:102]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'mainAn[1]'. [C:/Users/Caetano/Downloads/Telegram Desktop/Basys3_Master.xdc:103]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Caetano/Downloads/Telegram Desktop/Basys3_Master.xdc:103]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'mainAn[2]'. [C:/Users/Caetano/Downloads/Telegram Desktop/Basys3_Master.xdc:104]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Caetano/Downloads/Telegram Desktop/Basys3_Master.xdc:104]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'mainAn[2]'. [C:/Users/Caetano/Downloads/Telegram Desktop/Basys3_Master.xdc:105]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Caetano/Downloads/Telegram Desktop/Basys3_Master.xdc:105]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'mainAn[3]'. [C:/Users/Caetano/Downloads/Telegram Desktop/Basys3_Master.xdc:106]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Caetano/Downloads/Telegram Desktop/Basys3_Master.xdc:106]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'mainAn[3]'. [C:/Users/Caetano/Downloads/Telegram Desktop/Basys3_Master.xdc:107]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Caetano/Downloads/Telegram Desktop/Basys3_Master.xdc:107]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/Caetano/Downloads/Telegram Desktop/Basys3_Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1524.852 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:14 ; elapsed = 00:00:08 . Memory (MB): peak = 1524.852 ; gain = 0.000
+import_files -fileset constrs_1 {{C:/Users/Caetano/Downloads/Telegram Desktop/Basys3_Master.xdc}}
+close_design
+open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2053.172 ; gain = 0.000
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.135 . Memory (MB): peak = 2109.141 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.137 . Memory (MB): peak = 2109.141 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2109.141 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 2142.066 ; gain = 88.895
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Sep 24 14:26:53 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.runs/impl_1/runme.log
+reset_run impl_1
+launch_runs impl_1 -jobs 4
+[Fri Sep 24 14:32:35 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.runs/impl_1/runme.log
+refresh_design
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2244.910 ; gain = 0.000
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.045 . Memory (MB): peak = 2244.910 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.046 . Memory (MB): peak = 2244.910 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:11 . Memory (MB): peak = 2244.910 ; gain = 11.703
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+close_design
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_project
+open_project {C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.xpr}
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Fri Sep 24 14:35:27 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Fri Sep 24 14:40:40 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Fri Sep 24 14:43:57 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Fri Sep 24 14:47:45 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Fri Sep 24 14:50:40 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Fri Sep 24 14:52:10 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Fri Sep 24 14:53:11 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Fri Sep 24 14:53:56 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Fri Sep 24 14:57:10 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Fri Sep 24 15:03:20 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Fri Sep 24 15:10:40 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Fri Sep 24 15:12:12 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Fri Sep 24 15:13:14 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.runs/impl_1/runme.log
+open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2316.801 ; gain = 0.000
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.129 . Memory (MB): peak = 2316.801 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.129 . Memory (MB): peak = 2316.801 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2316.801 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Sep 24 15:14:57 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Fri Sep 24 15:29:26 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+[Fri Sep 24 15:33:20 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.runs/synth_1/runme.log
+[Fri Sep 24 15:33:20 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Sep 24 15:42:05 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Fri Sep 24 15:51:02 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Fri Sep 24 15:52:17 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Fri Sep 24 15:52:46 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Fri Sep 24 15:54:02 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Sep 24 15:56:23 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Sep 24 16:25:33 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.runs/synth_1/runme.log
+[Fri Sep 24 16:25:33 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.runs/impl_1/runme.log
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Fri Sep 24 16:44:35 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Fri Sep 24 16:47:31 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.runs/impl_1/runme.log
+close_design
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: main
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 2316.801 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'main' [C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/sources_1/new/main.vhd:11]
+INFO: [Synth 8-3491] module 'mux8x4' declared at 'C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/sources_1/new/mux8x4.vhd:4' bound to instance 'mux' of component 'mux8x4' [C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/sources_1/new/main.vhd:33]
+INFO: [Synth 8-638] synthesizing module 'mux8x4' [C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/sources_1/new/mux8x4.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'mux8x4' (1#1) [C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/sources_1/new/mux8x4.vhd:11]
+INFO: [Synth 8-3491] module 'display7Segmentos' declared at 'C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/sources_1/new/display7Segmentos.vhd:4' bound to instance 'display' of component 'display7Segmentos' [C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/sources_1/new/main.vhd:34]
+INFO: [Synth 8-638] synthesizing module 'display7Segmentos' [C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/sources_1/new/display7Segmentos.vhd:9]
+INFO: [Synth 8-256] done synthesizing module 'display7Segmentos' (2#1) [C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/sources_1/new/display7Segmentos.vhd:9]
+INFO: [Synth 8-3491] module 'logica_de_selecao' declared at 'C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/sources_1/new/logica_de_selecao.vhd:4' bound to instance 'seletor' of component 'logica_de_selecao' [C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/sources_1/new/main.vhd:35]
+INFO: [Synth 8-638] synthesizing module 'logica_de_selecao' [C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/sources_1/new/logica_de_selecao.vhd:9]
+INFO: [Synth 8-256] done synthesizing module 'logica_de_selecao' (3#1) [C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/sources_1/new/logica_de_selecao.vhd:9]
+INFO: [Synth 8-256] done synthesizing module 'main' (4#1) [C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/sources_1/new/main.vhd:11]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2316.801 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2316.801 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2316.801 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2316.801 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/constrs_1/imports/Telegram Desktop/Basys3_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'mainAn[0]'. [C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/constrs_1/imports/Telegram Desktop/Basys3_Master.xdc:100]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/constrs_1/imports/Telegram Desktop/Basys3_Master.xdc:100]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'mainAn[0]'. [C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/constrs_1/imports/Telegram Desktop/Basys3_Master.xdc:101]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/constrs_1/imports/Telegram Desktop/Basys3_Master.xdc:101]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'mainAn[1]'. [C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/constrs_1/imports/Telegram Desktop/Basys3_Master.xdc:102]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/constrs_1/imports/Telegram Desktop/Basys3_Master.xdc:102]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'mainAn[1]'. [C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/constrs_1/imports/Telegram Desktop/Basys3_Master.xdc:103]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/constrs_1/imports/Telegram Desktop/Basys3_Master.xdc:103]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'mainAn[2]'. [C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/constrs_1/imports/Telegram Desktop/Basys3_Master.xdc:104]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/constrs_1/imports/Telegram Desktop/Basys3_Master.xdc:104]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'mainAn[2]'. [C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/constrs_1/imports/Telegram Desktop/Basys3_Master.xdc:105]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/constrs_1/imports/Telegram Desktop/Basys3_Master.xdc:105]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'mainAn[3]'. [C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/constrs_1/imports/Telegram Desktop/Basys3_Master.xdc:106]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/constrs_1/imports/Telegram Desktop/Basys3_Master.xdc:106]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'mainAn[3]'. [C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/constrs_1/imports/Telegram Desktop/Basys3_Master.xdc:107]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/constrs_1/imports/Telegram Desktop/Basys3_Master.xdc:107]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/constrs_1/imports/Telegram Desktop/Basys3_Master.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2316.801 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2316.801 ; gain = 0.000
+13 Infos, 8 Warnings, 8 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2316.801 ; gain = 0.000
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'main_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj main_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/sources_1/new/display7Segmentos.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'display7Segmentos'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/sources_1/new/logica_de_selecao.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'logica_de_selecao'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/sim_1/new/main_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'main_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.sim/sim_1/behav/xsim'
+"xelab -wto 6b67e97843bf4726afa244ad4a711332 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot main_tb_behav xil_defaultlib.main_tb -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 6b67e97843bf4726afa244ad4a711332 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot main_tb_behav xil_defaultlib.main_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.mux8x4 [mux8x4_default]
+Compiling architecture behavioral of entity xil_defaultlib.display7Segmentos [display7segmentos_default]
+Compiling architecture behavioral of entity xil_defaultlib.logica_de_selecao [logica_de_selecao_default]
+Compiling architecture behavioral of entity xil_defaultlib.main_tb
+Built simulation snapshot main_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "main_tb_behav -key {Behavioral:sim_1:Functional:main_tb} -tclbatch {main_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source main_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: teste A5 not 0000010 (5)
+Time: 600 ns  Iteration: 0  Process: /main_tb/line__40  File: C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/sim_1/new/main_tb.vhd
+Error: teste A6 not 1111000 (6)
+Time: 700 ns  Iteration: 0  Process: /main_tb/line__40  File: C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/sim_1/new/main_tb.vhd
+Error: teste A7 not 1110001 (7)
+Time: 800 ns  Iteration: 0  Process: /main_tb/line__40  File: C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/sim_1/new/main_tb.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'main_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:14 . Memory (MB): peak = 2316.801 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 3200 ns
+Error: teste A5 not 0000010 (5)
+Time: 600 ns  Iteration: 0  Process: /main_tb/line__40  File: C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/sim_1/new/main_tb.vhd
+Error: teste A6 not 1111000 (6)
+Time: 700 ns  Iteration: 0  Process: /main_tb/line__40  File: C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/sim_1/new/main_tb.vhd
+Error: teste A7 not 1110001 (7)
+Time: 800 ns  Iteration: 0  Process: /main_tb/line__40  File: C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/sim_1/new/main_tb.vhd
+Error: teste B5 not 0000010 (5)
+Time: 2200 ns  Iteration: 0  Process: /main_tb/line__40  File: C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/sim_1/new/main_tb.vhd
+Error: teste B6 not 1111000 (6)
+Time: 2300 ns  Iteration: 0  Process: /main_tb/line__40  File: C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/sim_1/new/main_tb.vhd
+Error: teste B7 not 1110001 (7)
+Time: 2400 ns  Iteration: 0  Process: /main_tb/line__40  File: C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/sim_1/new/main_tb.vhd
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'main_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj main_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/sources_1/new/logica_de_selecao.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'logica_de_selecao'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/sim_1/new/main_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'main_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.sim/sim_1/behav/xsim'
+"xelab -wto 6b67e97843bf4726afa244ad4a711332 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot main_tb_behav xil_defaultlib.main_tb -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 6b67e97843bf4726afa244ad4a711332 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot main_tb_behav xil_defaultlib.main_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-3290] entity port 'seletor' does not match with type std_logic_vector of component port [C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/sim_1/new/main_tb.vhd:18]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit main_tb in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'main_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj main_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/sources_1/new/display7Segmentos.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'display7Segmentos'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/sources_1/new/logica_de_selecao.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'logica_de_selecao'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/sim_1/new/main_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'main_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.sim/sim_1/behav/xsim'
+"xelab -wto 6b67e97843bf4726afa244ad4a711332 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot main_tb_behav xil_defaultlib.main_tb -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 6b67e97843bf4726afa244ad4a711332 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot main_tb_behav xil_defaultlib.main_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.mux8x4 [mux8x4_default]
+Compiling architecture behavioral of entity xil_defaultlib.display7Segmentos [display7segmentos_default]
+Compiling architecture behavioral of entity xil_defaultlib.logica_de_selecao [logica_de_selecao_default]
+Compiling architecture behavioral of entity xil_defaultlib.main_tb
+Built simulation snapshot main_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "main_tb_behav -key {Behavioral:sim_1:Functional:main_tb} -tclbatch {main_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source main_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: teste A5 not 0000010 (5)
+Time: 600 ns  Iteration: 0  Process: /main_tb/line__40  File: C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/sim_1/new/main_tb.vhd
+Error: teste A6 not 1111000 (6)
+Time: 700 ns  Iteration: 0  Process: /main_tb/line__40  File: C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/sim_1/new/main_tb.vhd
+Error: teste A7 not 1110001 (7)
+Time: 800 ns  Iteration: 0  Process: /main_tb/line__40  File: C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/sim_1/new/main_tb.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'main_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 2316.801 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'main_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj main_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/sim_1/new/main_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'main_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.sim/sim_1/behav/xsim'
+"xelab -wto 6b67e97843bf4726afa244ad4a711332 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot main_tb_behav xil_defaultlib.main_tb -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 6b67e97843bf4726afa244ad4a711332 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot main_tb_behav xil_defaultlib.main_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.mux8x4 [mux8x4_default]
+Compiling architecture behavioral of entity xil_defaultlib.display7Segmentos [display7segmentos_default]
+Compiling architecture behavioral of entity xil_defaultlib.logica_de_selecao [logica_de_selecao_default]
+Compiling architecture behavioral of entity xil_defaultlib.main_tb
+Built simulation snapshot main_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "main_tb_behav -key {Behavioral:sim_1:Functional:main_tb} -tclbatch {main_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source main_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'main_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 2316.801 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 3200 ns
+add_bp {C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/sim_1/new/main_tb.vhd} 42
+remove_bps -file {C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/sim_1/new/main_tb.vhd} -line 42
+add_bp {C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/sim_1/new/main_tb.vhd} 44
+remove_bps -file {C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/sim_1/new/main_tb.vhd} -line 44
+add_bp {C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/sim_1/new/main_tb.vhd} 44
+remove_bps -file {C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/sim_1/new/main_tb.vhd} -line 44
+add_bp {C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/sim_1/new/main_tb.vhd} 44
+remove_bps -file {C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.srcs/sim_1/new/main_tb.vhd} -line 44
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_project
+open_project {C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.xpr}
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/Caetano/Desktop/PED1/Semana 10/Grupo12_Semana10_Trabalho4/Semana10_Trabalho4.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Sep 24 17:16:51 2021...

@@ -1,0 +1,175 @@
+/*
+
+Xilinx Vivado v2020.2 (64-bit) [Major: 2020, Minor: 2]
+SW Build: 3064766 on Wed Nov 18 09:12:45 MST 2020
+IP Build: 3064653 on Wed Nov 18 14:17:31 MST 2020
+
+Process ID (PID): 5404
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Sun Oct 10 15:47:03 BRT 2021
+Time zone: 	Brasilia Standard Time (America/Sao_Paulo)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1366x768
+Screen resolution (DPI): 100
+Available screens: 2
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+
+Java version: 	11.0.2 64-bit
+Java home: 	C:/Xilinx/Vivado/2020.2/tps/win64/jre11.0.2
+Java executable location: 	C:/Xilinx/Vivado/2020.2/tps/win64/jre11.0.2/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	Caetano
+User home directory: C:/Users/Caetano
+User working directory: C:/Users/Caetano/Desktop/PED1/Semana 12/somasub
+User country: 	BR
+User language: 	pt
+User locale: 	pt_BR
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2020.2
+RDI_DATADIR: C:/Xilinx/Vivado/2020.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2020.2/bin
+
+Vivado preferences file location: C:/Users/Caetano/AppData/Roaming/Xilinx/Vivado/2020.2/vivado.xml
+Vivado preferences directory: C:/Users/Caetano/AppData/Roaming/Xilinx/Vivado/2020.2/
+Vivado layouts directory: C:/Users/Caetano/AppData/Roaming/Xilinx/Vivado/2020.2/data/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2020.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/Caetano/Desktop/PED1/Semana 12/somasub/vivado.log
+Vivado journal file location: 	C:/Users/Caetano/Desktop/PED1/Semana 12/somasub/vivado.jou
+Engine tmp dir: 	C:/Users/Caetano/Desktop/PED1/Semana 12/somasub/.Xil/Vivado-5404-DESKTOP-0VQB5DC
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_HLS: C:/Xilinx/Vitis_HLS/2020.2
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2020.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2020.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2020.2
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,013 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// WARNING: HEventQueue.dispatchEvent() is taking  1002 ms.
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bz (cr):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\Caetano\Desktop\PED1\Semana 12\somasub\somasub.xpr. Version: Vivado v2020.2 
+// Tcl Message: open_project {C:/Users/Caetano/Desktop/PED1/Semana 12/somasub/somasub.xpr} 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project {C:/Users/Caetano/Desktop/PED1/Semana 12/somasub/somasub.xpr} 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/micka/OneDrive/rea de Trabalho/somasub2/somasub' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,013 MB. GUI used memory: 55 MB. Current time: 10/10/21, 3:47:06 PM BRT
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 63 MB (+63941kb) [00:00:38]
+// [Engine Memory]: 1,013 MB (+911251kb) [00:00:38]
+// [GUI Memory]: 83 MB (+16762kb) [00:00:39]
+// [GUI Memory]: 102 MB (+16432kb) [00:00:40]
+// [GUI Memory]: 114 MB (+6664kb) [00:00:41]
+// WARNING: HEventQueue.dispatchEvent() is taking  8072 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:32 ; elapsed = 00:00:13 . Memory (MB): peak = 1000.699 ; gain = 0.000 
+// Project name: somasub; location: C:/Users/Caetano/Desktop/PED1/Semana 12/somasub; part: xc7a35tcpg236-1
+dismissDialog("Open Project"); // bz
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 479ms to process. Increasing delay to 3000 ms.
+// Tcl Message: update_compile_order -fileset sources_1 
+// PAPropertyPanels.initPanels (somasub.vhd) elapsed time: 0.5s
+// Elapsed time: 26 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, somasub(Behavioral) (somasub.vhd)]", 1, true); // D - Node
+// WARNING: HEventQueue.dispatchEvent() is taking  1418 ms.
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, somasub(Behavioral) (somasub.vhd)]", 1, true, false, false, false, false, true); // D - Double Click - Node
+// [GUI Memory]: 125 MB (+5583kb) [00:01:14]
+// WARNING: HEventQueue.dispatchEvent() is taking  1003 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1104 ms.
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, somasub(Behavioral) (somasub.vhd)]", 1); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, somasub(Behavioral) (somasub.vhd)]", 1, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, somasub(Behavioral) (somasub.vhd)]", 1, true, false, false, false, false, true); // D - Double Click - Node
+// [GUI Memory]: 137 MB (+6084kb) [00:01:18]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, somasub(Behavioral) (somasub.vhd), inver : inversor(Behavioral) (inversor.vhd)]", 2, false); // D
+// Elapsed time: 16 seconds
+selectCodeEditor("somasub.vhd", 333, 385); // bP
+selectCodeEditor("somasub.vhd", 5, 497); // bP
+selectCodeEditor("somasub.vhd", 444, 362); // bP
+selectCodeEditor("somasub.vhd", 58, 404); // bP
+// WARNING: HEventQueue.dispatchEvent() is taking  2080 ms.
+selectCodeEditor("somasub.vhd", 1, 436); // bP
+selectCodeEditor("somasub.vhd", 298, 393); // bP
+selectCodeEditor("somasub.vhd", 221, 435); // bP
+selectCodeEditor("somasub.vhd", 221, 435, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("somasub.vhd", 221, 435); // bP
+// WARNING: HEventQueue.dispatchEvent() is taking  1591 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1549 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1016 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1051 ms. Increasing delay to 3153 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 4726 ms. Increasing delay to 14178 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 291ms to process. Increasing delay to 2000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 22 ms. Decreasing delay to 2022 ms.
+// Elapsed time: 499 seconds
+selectCodeEditor("somasub.vhd", 0, 365); // bP
+selectCodeEditor("somasub.vhd", 1, 209); // bP
+// Elapsed time: 12 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "somasub.vhd", 1); // m
+// Elapsed time: 224 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "somasub.vhd", 1); // m
+// HMemoryUtils.trashcanNow. Engine heap size: 1,013 MB. GUI used memory: 75 MB. Current time: 10/10/21, 4:17:08 PM BRT
+// WARNING: HEventQueue.dispatchEvent() is taking  3566 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 5087 ms. Increasing delay to 15261 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 20 ms. Decreasing delay to 2020 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1433 ms. Increasing delay to 4299 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1801 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2492 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 3331 ms. Increasing delay to 9993 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3662 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5369 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,013 MB. GUI used memory: 67 MB. Current time: 10/10/21, 4:47:09 PM BRT
+// WARNING: HEventQueue.dispatchEvent() is taking  1395 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,013 MB. GUI used memory: 67 MB. Current time: 10/10/21, 5:17:09 PM BRT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,013 MB. GUI used memory: 67 MB. Current time: 10/10/21, 5:47:09 PM BRT
+// WARNING: HEventQueue.dispatchEvent() is taking  1279 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1309 ms.

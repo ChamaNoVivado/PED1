@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Oct 10 19:17:40 2021
+# Process ID: 6808
+# Current directory: C:/Users/Caetano/Desktop/PED1/Semana 12/somasub
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2080 C:\Users\Caetano\Desktop\PED1\Semana 12\somasub\somasub.xpr
+# Log file: C:/Users/Caetano/Desktop/PED1/Semana 12/somasub/vivado.log
+# Journal file: C:/Users/Caetano/Desktop/PED1/Semana 12/somasub\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Caetano/Desktop/PED1/Semana 12/somasub/somasub.xpr}
+update_compile_order -fileset sources_1

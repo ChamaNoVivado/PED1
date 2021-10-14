@@ -1,0 +1,6 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Prova1_Q2.srcs/sources_1/new/Questao2.vhd" \
+
+# Do not sort compile order
+nosort
