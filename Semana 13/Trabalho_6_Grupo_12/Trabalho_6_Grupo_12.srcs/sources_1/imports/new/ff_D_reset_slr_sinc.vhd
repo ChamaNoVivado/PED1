@@ -18,11 +18,11 @@ begin
 
 ffD: process(clk)
 begin
-    if falling_edge(clk) then  -- rising edge-> se o elemento der uma borda de subida, ele volta um , caso contrario volta 0.
-        if clear ='1' then
+    if falling_edge(clk) then
+        if clear = '1' then
             qt <= '0';
         else 
-            qt <= D;               -- folwind edge -> caso ocarra o contrario
+            qt <= D;
         end if;
     end if;
  end process;
