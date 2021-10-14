@@ -190,3 +190,20 @@ typeControlKey((HResource) null, "ff_D_reset_slr_sinc.vhd", 'c'); // bP
 // WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1399 ms. Increasing delay to 4197 ms.
 // WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 946 ms to process. Increasing delay to 2000 ms.
 // WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 941 ms to process. Increasing delay to 2000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1354 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,081 MB. GUI used memory: 78 MB. Current time: 10/14/21, 7:44:53 PM BRT
+// Elapsed time: 1603 seconds
+selectCodeEditor("ff_D_reset_slr_sinc.vhd", 353, 342); // bP
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ff_D.vhd", 2); // m
+selectCodeEditor("ff_D.vhd", 228, 396); // bP
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, main(Behavioral) (main.vhd), ff : ff_D(Behavioral) (ff_D.vhd)]", 3, false); // D
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "main.vhd", 1); // m
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ff_D.vhd", 2); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ff_D_reset_slr_sinc.vhd", 3); // m
+selectCodeEditor("ff_D_reset_slr_sinc.vhd", 328, 424); // bP
+selectCodeEditor("ff_D_reset_slr_sinc.vhd", 287, 476); // bP
+selectCodeEditor("ff_D_reset_slr_sinc.vhd", 225, 475); // bP
+selectCodeEditor("ff_D_reset_slr_sinc.vhd", 99, 33, false, false, false, true, false); // bP - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ak
