@@ -11,9 +11,9 @@ end divisor_clock;
 
 architecture Behavioral of divisor_clock is
     
-    constant preset : std_logic_vector(25 downto 0):="11100100111000011100000000";
+    constant preset : std_logic_vector(26 downto 0):="010111110101111000010000000";
     signal s_1hz: std_logic :='0';
-    signal count : std_logic_vector(25 downto 0):=(others =>'0');
+    signal count : std_logic_vector(26 downto 0):=(others =>'0');
     
 begin 
     

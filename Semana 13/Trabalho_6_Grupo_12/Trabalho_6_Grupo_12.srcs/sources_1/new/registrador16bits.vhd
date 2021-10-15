@@ -9,11 +9,11 @@ end registrador16bits;
 
 architecture Behavioral of registrador16bits is
 
-component ff_D_reset_slr_sinc 
+component ff_D_reset_clr_assinc
     Port ( Clk : in STD_LOGIC;
            D : in STD_LOGIC;
            Q : out STD_LOGIC;
-           clear : in STD_LOGIC);
+           reset : in STD_LOGIC);
 end component;
 
 component divisor_clock
@@ -31,21 +31,21 @@ begin
     
     clock: divisor_clock port map (reset => JB(1), clk => clk, clk_1hz => clk_1hz);
     
-    ff00: ff_D_reset_slr_sinc port map (D => JB(0), Clk => clk, Q => q_signal(0), clear => JB(1));
-    ff01: ff_D_reset_slr_sinc port map (D => q_signal(0), Clk => clk_1hz, Q => q_signal(1), clear => JB(1));
-    ff02: ff_D_reset_slr_sinc port map (D => q_signal(1), Clk => clk_1hz, Q => q_signal(2), clear => JB(1));
-    ff03: ff_D_reset_slr_sinc port map (D => q_signal(2), Clk => clk_1hz, Q => q_signal(3), clear => JB(1));
-    ff04: ff_D_reset_slr_sinc port map (D => q_signal(3), Clk => clk_1hz, Q => q_signal(4), clear => JB(1));
-    ff05: ff_D_reset_slr_sinc port map (D => q_signal(4), Clk => clk_1hz, Q => q_signal(5), clear => JB(1));
-    ff06: ff_D_reset_slr_sinc port map (D => q_signal(5), Clk => clk_1hz, Q => q_signal(6), clear => JB(1));
-    ff07: ff_D_reset_slr_sinc port map (D => q_signal(6), Clk => clk_1hz, Q => q_signal(7), clear => JB(1));
-    ff08: ff_D_reset_slr_sinc port map (D => q_signal(7), Clk => clk_1hz, Q => q_signal(8), clear => JB(1));
-    ff09: ff_D_reset_slr_sinc port map (D => q_signal(8), Clk => clk_1hz, Q => q_signal(9), clear => JB(1));
-    ff10: ff_D_reset_slr_sinc port map (D => q_signal(9), Clk => clk_1hz, Q => q_signal(10), clear => JB(1));
-    ff11: ff_D_reset_slr_sinc port map (D => q_signal(10), Clk => clk_1hz, Q => q_signal(11), clear => JB(1));
-    ff12: ff_D_reset_slr_sinc port map (D => q_signal(11), Clk => clk_1hz, Q => q_signal(12), clear => JB(1));
-    ff13: ff_D_reset_slr_sinc port map (D => q_signal(12), Clk => clk_1hz, Q => q_signal(13), clear => JB(1));
-    ff14: ff_D_reset_slr_sinc port map (D => q_signal(13), Clk => clk_1hz, Q => q_signal(14), clear => JB(1));
-    ff15: ff_D_reset_slr_sinc port map (D => q_signal(14), Clk => clk_1hz, Q => q_signal(15), clear => JB(1));
+    ff00: ff_D_reset_clr_assinc port map (D => JB(0), Clk => clk, Q => q_signal(0), reset => JB(1));
+    ff01: ff_D_reset_clr_assinc port map (D => q_signal(0), Clk => clk_1hz, Q => q_signal(1), reset => JB(1));
+    ff02: ff_D_reset_clr_assinc port map (D => q_signal(1), Clk => clk_1hz, Q => q_signal(2), reset => JB(1));
+    ff03: ff_D_reset_clr_assinc port map (D => q_signal(2), Clk => clk_1hz, Q => q_signal(3), reset => JB(1));
+    ff04: ff_D_reset_clr_assinc port map (D => q_signal(3), Clk => clk_1hz, Q => q_signal(4), reset => JB(1));
+    ff05: ff_D_reset_clr_assinc port map (D => q_signal(4), Clk => clk_1hz, Q => q_signal(5), reset => JB(1));
+    ff06: ff_D_reset_clr_assinc port map (D => q_signal(5), Clk => clk_1hz, Q => q_signal(6), reset => JB(1));
+    ff07: ff_D_reset_clr_assinc port map (D => q_signal(6), Clk => clk_1hz, Q => q_signal(7), reset => JB(1));
+    ff08: ff_D_reset_clr_assinc port map (D => q_signal(7), Clk => clk_1hz, Q => q_signal(8), reset => JB(1));
+    ff09: ff_D_reset_clr_assinc port map (D => q_signal(8), Clk => clk_1hz, Q => q_signal(9), reset => JB(1));
+    ff10: ff_D_reset_clr_assinc port map (D => q_signal(9), Clk => clk_1hz, Q => q_signal(10), reset => JB(1));
+    ff11: ff_D_reset_clr_assinc port map (D => q_signal(10), Clk => clk_1hz, Q => q_signal(11), reset => JB(1));
+    ff12: ff_D_reset_clr_assinc port map (D => q_signal(11), Clk => clk_1hz, Q => q_signal(12), reset => JB(1));
+    ff13: ff_D_reset_clr_assinc port map (D => q_signal(12), Clk => clk_1hz, Q => q_signal(13), reset => JB(1));
+    ff14: ff_D_reset_clr_assinc port map (D => q_signal(13), Clk => clk_1hz, Q => q_signal(14), reset => JB(1));
+    ff15: ff_D_reset_clr_assinc port map (D => q_signal(14), Clk => clk_1hz, Q => q_signal(15), reset => JB(1));
                                             
 end Behavioral;

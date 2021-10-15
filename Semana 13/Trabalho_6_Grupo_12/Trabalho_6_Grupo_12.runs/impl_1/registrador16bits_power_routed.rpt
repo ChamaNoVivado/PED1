@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date             : Thu Oct 14 21:57:33 2021
+| Date             : Fri Oct 15 10:53:30 2021
 | Host             : DESKTOP-0VQB5DC running 64-bit major release  (build 9200)
 | Command          : report_power -file registrador16bits_power_routed.rpt -pb registrador16bits_power_summary_routed.pb -rpx registrador16bits_power_routed.rpx
 | Design           : registrador16bits
@@ -53,12 +53,12 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |       89 |       --- |             --- |
-|   LUT as Logic |    <0.001 |        8 |     20800 |            0.04 |
+| Slice Logic    |    <0.001 |       91 |       --- |             --- |
+|   LUT as Logic |    <0.001 |        9 |     20800 |            0.04 |
 |   CARRY4       |    <0.001 |        7 |      8150 |            0.09 |
-|   Register     |    <0.001 |       56 |     41600 |            0.13 |
+|   Register     |    <0.001 |       57 |     41600 |            0.14 |
 |   Others       |     0.000 |       18 |       --- |             --- |
-| Signals        |    <0.001 |       70 |       --- |             --- |
+| Signals        |    <0.001 |       72 |       --- |             --- |
 | I/O            |    <0.001 |       19 |       106 |           17.92 |
 | Static Power   |     0.072 |          |           |                 |
 | Total          |     0.073 |          |           |                 |

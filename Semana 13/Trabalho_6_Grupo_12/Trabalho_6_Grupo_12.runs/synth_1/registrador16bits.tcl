@@ -71,7 +71,6 @@ proc create_report { reportName command } {
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param chipscope.maxJobs 1
-set_msg_config -id {Common 17-41} -limit 10000000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a35tcpg236-1
 
@@ -88,7 +87,7 @@ OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_vhdl -library xil_defaultlib {
   {C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/imports/new/divisor_clock.vhd}
-  {C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/imports/new/ff_D_reset_slr_sinc.vhd}
+  {C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/ff_D_reset_clr_assinc.vhd}
   {C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/registrador16bits.vhd}
 }
 OPTRACE "Adding files" END { }
