@@ -71,6 +71,9 @@ proc create_report { reportName command } {
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param chipscope.maxJobs 1
+set_param synth.incrementalSynthesisCache {C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/.Xil/Vivado-3788-DESKTOP-0VQB5DC/incrSyn}
+set_msg_config -id {Synth 8-256} -limit 10000
+set_msg_config -id {Synth 8-638} -limit 10000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a35tcpg236-1
 

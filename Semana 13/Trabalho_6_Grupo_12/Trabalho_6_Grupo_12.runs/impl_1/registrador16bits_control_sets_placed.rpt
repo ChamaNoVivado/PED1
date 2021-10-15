@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Fri Oct 15 10:52:27 2021
+| Date         : Fri Oct 15 11:08:23 2021
 | Host         : DESKTOP-0VQB5DC running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file registrador16bits_control_sets_placed.rpt
 | Design       : registrador16bits
@@ -59,7 +59,7 @@ Table of Contents
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | No           | No                    | No                     |               1 |            1 |
-| No           | No                    | Yes                    |              29 |           10 |
+| No           | No                    | Yes                    |              29 |            7 |
 | No           | Yes                   | No                     |              27 |            7 |
 | Yes          | No                    | No                     |               0 |            0 |
 | Yes          | No                    | Yes                    |               0 |            0 |
@@ -73,10 +73,10 @@ Table of Contents
 +----------------+---------------+------------------------+------------------+----------------+--------------+
 |  Clock Signal  | Enable Signal |    Set/Reset Signal    | Slice Load Count | Bel Load Count | Bels / Slice |
 +----------------+---------------+------------------------+------------------+----------------+--------------+
-|  clk_IBUF_BUFG |               |                        |                1 |              1 |         1.00 |
-| ~clk_IBUF_BUFG |               | JB_IBUF[1]             |                1 |              1 |         1.00 |
-|  clk_IBUF_BUFG |               | clock/count[0]_i_1_n_0 |                7 |             27 |         3.86 |
-| ~clock/s_1hz   |               | JB_IBUF[1]             |                9 |             28 |         3.11 |
+| ~clk_IBUF_BUFG |               |                        |                1 |              1 |         1.00 |
+| ~clk_IBUF_BUFG |               | JB_IBUF[0]             |                1 |              1 |         1.00 |
+| ~clk_IBUF_BUFG |               | clock/count[0]_i_1_n_0 |                7 |             27 |         3.86 |
+| ~clock/s_1hz   |               | JB_IBUF[0]             |                6 |             28 |         4.67 |
 +----------------+---------------+------------------------+------------------+----------------+--------------+
 
 

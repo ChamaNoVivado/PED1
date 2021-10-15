@@ -23,8 +23,8 @@ process(clk, reset)
 
 begin
 
-if rising_edge(clk) then 
-    if reset='1' then
+if falling_edge(clk) then 
+    if reset= '1' then
          s_1hz <= '0';
          count <= (others => '0');
          elsif  count = preset then

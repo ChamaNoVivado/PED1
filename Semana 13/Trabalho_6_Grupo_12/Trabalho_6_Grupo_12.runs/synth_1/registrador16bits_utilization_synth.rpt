@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Fri Oct 15 10:50:40 2021
+| Date         : Fri Oct 15 11:06:19 2021
 | Host         : DESKTOP-0VQB5DC running 64-bit major release  (build 9200)
 | Command      : report_utilization -file registrador16bits_utilization_synth.rpt -pb registrador16bits_utilization_synth.pb
 | Design       : registrador16bits
