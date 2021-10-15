@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Oct 14 21:53:36 2021
+# Process ID: 14404
+# Current directory: C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.runs/impl_1
+# Command line: vivado.exe -log registrador16bits.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source registrador16bits.tcl -notrace
+# Log file: C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.runs/impl_1/registrador16bits.vdi
+# Journal file: C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source registrador16bits.tcl -notrace
