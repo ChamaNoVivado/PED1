@@ -24,4 +24,5 @@ begin
             qt <= D;
         end if;
     end process;
+    
 end Behavioral;

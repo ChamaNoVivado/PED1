@@ -19,21 +19,20 @@ begin
     
     clk_1hz <= s_1hz;
 
-process(clk, reset) 
-
-begin
-
-if falling_edge(clk) then 
-    if reset= '1' then
-         s_1hz <= '0';
-         count <= (others => '0');
-         elsif  count = preset then
-              s_1hz <= not s_1hz;
-              count <= (others => '0');
-         else
-              count <= count + '1';
+    process(clk, reset)
+    begin
+    
+        if falling_edge(clk) then 
+            if reset= '1' then
+                s_1hz <= '0';
+                count <= (others => '0');
+            elsif  count = preset then
+                s_1hz <= not s_1hz;
+                count <= (others => '0');
+            else
+                count <= count + '1';
+            end if;
         end if;
-    end if;
     end process;
  
 end Behavioral;
