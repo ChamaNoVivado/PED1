@@ -21,12 +21,11 @@ begin
 
     process(clk, reset)
     begin
-    
-        if falling_edge(clk) then 
-            if reset= '1' then
-                s_1hz <= '0';
-                count <= (others => '0');
-            elsif  count = preset then
+        if reset= '1' then
+            s_1hz <= '0';
+            count <= (others => '0');
+        elsif falling_edge(clk) then 
+            if  count = preset then
                 s_1hz <= not s_1hz;
                 count <= (others => '0');
             else

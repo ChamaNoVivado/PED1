@@ -3,14 +3,15 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity registrador16bits is
     Port ( clk : in STD_LOGIC;
-           JB : in STD_LOGIC_VECTOR (1 downto 0);
+           clear : in STD_LOGIC;
+           entrada : in STD_LOGIC;
            led : out STD_LOGIC_VECTOR (15 downto 0));
 end registrador16bits;
 
 architecture Behavioral of registrador16bits is
 
-component ff_D_reset_clr_assinc
-    Port ( Clk : in STD_LOGIC;
+component ff_D_reset
+    Port ( clk_dividido : in STD_LOGIC;
            D : in STD_LOGIC;
            Q : out STD_LOGIC;
            reset : in STD_LOGIC);
@@ -22,30 +23,30 @@ component divisor_clock
            clk_1hz : out STD_LOGIC);
 end component;
 
-    signal q_signal : STD_LOGIC_VECTOR (15 downto 0);
-    signal clk_1hz : STD_LOGIC;
+    signal saida : STD_LOGIC_VECTOR (15 downto 0);
+    signal clk_1hz_signal : STD_LOGIC;
 
 begin
 
-    led <= q_signal;
+    led <= saida;
+
+    clock: divisor_clock port map (reset => clear, clk => clk, clk_1hz => clk_1hz_signal);
     
-    clock: divisor_clock port map (reset => JB(1), clk => clk, clk_1hz => clk_1hz);
-    
-    ff00: ff_D_reset_clr_assinc port map (D => JB(0), Clk => clk, Q => q_signal(0), reset => JB(1));
-    ff01: ff_D_reset_clr_assinc port map (D => q_signal(0), Clk => clk_1hz, Q => q_signal(1), reset => JB(1));
-    ff02: ff_D_reset_clr_assinc port map (D => q_signal(1), Clk => clk_1hz, Q => q_signal(2), reset => JB(1));
-    ff03: ff_D_reset_clr_assinc port map (D => q_signal(2), Clk => clk_1hz, Q => q_signal(3), reset => JB(1));
-    ff04: ff_D_reset_clr_assinc port map (D => q_signal(3), Clk => clk_1hz, Q => q_signal(4), reset => JB(1));
-    ff05: ff_D_reset_clr_assinc port map (D => q_signal(4), Clk => clk_1hz, Q => q_signal(5), reset => JB(1));
-    ff06: ff_D_reset_clr_assinc port map (D => q_signal(5), Clk => clk_1hz, Q => q_signal(6), reset => JB(1));
-    ff07: ff_D_reset_clr_assinc port map (D => q_signal(6), Clk => clk_1hz, Q => q_signal(7), reset => JB(1));
-    ff08: ff_D_reset_clr_assinc port map (D => q_signal(7), Clk => clk_1hz, Q => q_signal(8), reset => JB(1));
-    ff09: ff_D_reset_clr_assinc port map (D => q_signal(8), Clk => clk_1hz, Q => q_signal(9), reset => JB(1));
-    ff10: ff_D_reset_clr_assinc port map (D => q_signal(9), Clk => clk_1hz, Q => q_signal(10), reset => JB(1));
-    ff11: ff_D_reset_clr_assinc port map (D => q_signal(10), Clk => clk_1hz, Q => q_signal(11), reset => JB(1));
-    ff12: ff_D_reset_clr_assinc port map (D => q_signal(11), Clk => clk_1hz, Q => q_signal(12), reset => JB(1));
-    ff13: ff_D_reset_clr_assinc port map (D => q_signal(12), Clk => clk_1hz, Q => q_signal(13), reset => JB(1));
-    ff14: ff_D_reset_clr_assinc port map (D => q_signal(13), Clk => clk_1hz, Q => q_signal(14), reset => JB(1));
-    ff15: ff_D_reset_clr_assinc port map (D => q_signal(14), Clk => clk_1hz, Q => q_signal(15), reset => JB(1));
+    ff00: ff_D_reset port map (D => entrada,   clk_dividido => clk_1hz_signal, Q => saida(0),  reset => clear);
+    ff01: ff_D_reset port map (D => saida(0),  clk_dividido => clk_1hz_signal, Q => saida(1),  reset => clear);
+    ff02: ff_D_reset port map (D => saida(1),  clk_dividido => clk_1hz_signal, Q => saida(2),  reset => clear);
+    ff03: ff_D_reset port map (D => saida(2),  clk_dividido => clk_1hz_signal, Q => saida(3),  reset => clear);
+    ff04: ff_D_reset port map (D => saida(3),  clk_dividido => clk_1hz_signal, Q => saida(4),  reset => clear);
+    ff05: ff_D_reset port map (D => saida(4),  clk_dividido => clk_1hz_signal, Q => saida(5),  reset => clear);
+    ff06: ff_D_reset port map (D => saida(5),  clk_dividido => clk_1hz_signal, Q => saida(6),  reset => clear);
+    ff07: ff_D_reset port map (D => saida(6),  clk_dividido => clk_1hz_signal, Q => saida(7),  reset => clear);
+    ff08: ff_D_reset port map (D => saida(7),  clk_dividido => clk_1hz_signal, Q => saida(8),  reset => clear);
+    ff09: ff_D_reset port map (D => saida(8),  clk_dividido => clk_1hz_signal, Q => saida(9),  reset => clear);
+    ff10: ff_D_reset port map (D => saida(9),  clk_dividido => clk_1hz_signal, Q => saida(10), reset => clear);
+    ff11: ff_D_reset port map (D => saida(10), clk_dividido => clk_1hz_signal, Q => saida(11), reset => clear);
+    ff12: ff_D_reset port map (D => saida(11), clk_dividido => clk_1hz_signal, Q => saida(12), reset => clear);
+    ff13: ff_D_reset port map (D => saida(12), clk_dividido => clk_1hz_signal, Q => saida(13), reset => clear);
+    ff14: ff_D_reset port map (D => saida(13), clk_dividido => clk_1hz_signal, Q => saida(14), reset => clear);
+    ff15: ff_D_reset port map (D => saida(14), clk_dividido => clk_1hz_signal, Q => saida(15), reset => clear);
                                             
 end Behavioral;

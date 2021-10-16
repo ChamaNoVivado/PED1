@@ -90,7 +90,7 @@ OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_vhdl -library xil_defaultlib {
   {C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/imports/new/divisor_clock.vhd}
-  {C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/ff_D_reset_clr_assinc.vhd}
+  {C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/ff_D_reset.vhd}
   {C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/registrador16bits.vhd}
 }
 OPTRACE "Adding files" END { }
