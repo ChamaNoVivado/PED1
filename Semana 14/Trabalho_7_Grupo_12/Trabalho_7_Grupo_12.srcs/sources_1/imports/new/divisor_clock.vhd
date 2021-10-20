@@ -4,7 +4,7 @@ use IEEE.std_logic_arith.ALL;
 USE IEEE.std_logic_unsigned.ALL;
 
 entity divisor_clock is
-    Port ( reset : in STD_LOGIC;
+    Port ( CLR : in STD_LOGIC;
            clk : in STD_LOGIC;
            clk_1hz : out STD_LOGIC);
 end divisor_clock;
@@ -19,9 +19,9 @@ begin
     
     clk_1hz <= s_1hz;
 
-    process(clk, reset)
+    process(clk, CLR)
     begin
-        if reset= '1' then
+        if CLR = '1' then
             s_1hz <= '0';
             count <= (others => '0');
         elsif falling_edge(clk) then 

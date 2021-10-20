@@ -18,14 +18,22 @@ component BCD_7S_0toF is
 end component;
 
 component divisor_clock is
-    Port ( reset : in STD_LOGIC;
+    Port ( CLR : in STD_LOGIC;
            clk : in STD_LOGIC;
            clk_1hz : out STD_LOGIC);
 end component;
 
-
+    signal clk_1hz_signal : STD_LOGIC;
+    signal clk_and_En : STD_LOGIC;
+    signal sA, sB, sC, sD : STD_LOGIC;
 
 begin
 
+    clock: divisor_clock port map (CLR => Rst, clk => clk, clk_1hz => clk_1hz_signal);
+    
+    ff00: flipfrops port map (J => 1, K => 1, Q => sA,  clk_dividido => clk_1hz_signal,  CLR => Rst);
+    ff01: flipfrops port map (J => 1, K => 1, Q => sB,  clk_dividido => clk_1hz_signal,  CLR => Rst);
+    ff02: flipfrops port map (J => 1, K => 1, Q => sC,  clk_dividido => clk_1hz_signal,  CLR => Rst);
+    ff03: flipfrops port map (J => 1, K => 1, Q => sD,  clk_dividido => clk_1hz_signal,  CLR => Rst);
 
 end Behavioral;
