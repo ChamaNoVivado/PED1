@@ -1,0 +1,375 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Oct 15 10:11:11 2021
+# Process ID: 3788
+# Current directory: C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10084 C:\Users\Caetano\Desktop\PED1\Semana 13\Trabalho_6_Grupo_12\Trabalho_6_Grupo_12.xpr
+# Log file: C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/vivado.log
+# Journal file: C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.xpr}
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:43 ; elapsed = 00:00:15 . Memory (MB): peak = 1001.035 ; gain = 0.000
+update_compile_order -fileset sources_1
+close [ open {C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/ff_D_reset_clr_assinc.vhd} w ]
+add_files {{C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/ff_D_reset_clr_assinc.vhd}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Oct 15 10:26:26 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.runs/synth_1/runme.log
+[Fri Oct 15 10:26:26 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Oct 15 10:40:03 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.runs/synth_1/runme.log
+[Fri Oct 15 10:40:03 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.runs/impl_1/runme.log
+export_ip_user_files -of_objects  [get_files {{C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/imports/new/ff_D_reset_slr_assinc.vhd}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/imports/new/ff_D_reset_slr_assinc.vhd}}
+file delete -force {C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/imports/new/ff_D_reset_slr_assinc.vhd}
+export_ip_user_files -of_objects  [get_files {{C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/imports/new/ff_D_reset_slr_sinc.vhd}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/imports/new/ff_D_reset_slr_sinc.vhd}}
+file delete -force {C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/imports/new/ff_D_reset_slr_sinc.vhd}
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Oct 15 10:49:01 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.runs/synth_1/runme.log
+[Fri Oct 15 10:49:01 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.runs/impl_1/runme.log
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: registrador16bits
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1291.316 ; gain = 255.070
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'registrador16bits' [C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/registrador16bits.vhd:10]
+INFO: [Synth 8-3491] module 'divisor_clock' declared at 'C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/imports/new/divisor_clock.vhd:6' bound to instance 'clock' of component 'divisor_clock' [C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/registrador16bits.vhd:32]
+INFO: [Synth 8-638] synthesizing module 'divisor_clock' [C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/imports/new/divisor_clock.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'divisor_clock' (1#1) [C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/imports/new/divisor_clock.vhd:12]
+INFO: [Synth 8-3491] module 'ff_D_reset_clr_assinc' declared at 'C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/ff_D_reset_clr_assinc.vhd:4' bound to instance 'ff00' of component 'ff_D_reset_clr_assinc' [C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/registrador16bits.vhd:34]
+INFO: [Synth 8-638] synthesizing module 'ff_D_reset_clr_assinc' [C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/ff_D_reset_clr_assinc.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'ff_D_reset_clr_assinc' (2#1) [C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/ff_D_reset_clr_assinc.vhd:11]
+INFO: [Synth 8-3491] module 'ff_D_reset_clr_assinc' declared at 'C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/ff_D_reset_clr_assinc.vhd:4' bound to instance 'ff01' of component 'ff_D_reset_clr_assinc' [C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/registrador16bits.vhd:35]
+INFO: [Synth 8-3491] module 'ff_D_reset_clr_assinc' declared at 'C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/ff_D_reset_clr_assinc.vhd:4' bound to instance 'ff02' of component 'ff_D_reset_clr_assinc' [C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/registrador16bits.vhd:36]
+INFO: [Synth 8-3491] module 'ff_D_reset_clr_assinc' declared at 'C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/ff_D_reset_clr_assinc.vhd:4' bound to instance 'ff03' of component 'ff_D_reset_clr_assinc' [C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/registrador16bits.vhd:37]
+INFO: [Synth 8-3491] module 'ff_D_reset_clr_assinc' declared at 'C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/ff_D_reset_clr_assinc.vhd:4' bound to instance 'ff04' of component 'ff_D_reset_clr_assinc' [C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/registrador16bits.vhd:38]
+INFO: [Synth 8-3491] module 'ff_D_reset_clr_assinc' declared at 'C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/ff_D_reset_clr_assinc.vhd:4' bound to instance 'ff05' of component 'ff_D_reset_clr_assinc' [C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/registrador16bits.vhd:39]
+INFO: [Synth 8-3491] module 'ff_D_reset_clr_assinc' declared at 'C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/ff_D_reset_clr_assinc.vhd:4' bound to instance 'ff06' of component 'ff_D_reset_clr_assinc' [C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/registrador16bits.vhd:40]
+INFO: [Synth 8-3491] module 'ff_D_reset_clr_assinc' declared at 'C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/ff_D_reset_clr_assinc.vhd:4' bound to instance 'ff07' of component 'ff_D_reset_clr_assinc' [C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/registrador16bits.vhd:41]
+INFO: [Synth 8-3491] module 'ff_D_reset_clr_assinc' declared at 'C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/ff_D_reset_clr_assinc.vhd:4' bound to instance 'ff08' of component 'ff_D_reset_clr_assinc' [C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/registrador16bits.vhd:42]
+INFO: [Synth 8-3491] module 'ff_D_reset_clr_assinc' declared at 'C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/ff_D_reset_clr_assinc.vhd:4' bound to instance 'ff09' of component 'ff_D_reset_clr_assinc' [C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/registrador16bits.vhd:43]
+INFO: [Synth 8-3491] module 'ff_D_reset_clr_assinc' declared at 'C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/ff_D_reset_clr_assinc.vhd:4' bound to instance 'ff10' of component 'ff_D_reset_clr_assinc' [C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/registrador16bits.vhd:44]
+INFO: [Synth 8-3491] module 'ff_D_reset_clr_assinc' declared at 'C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/ff_D_reset_clr_assinc.vhd:4' bound to instance 'ff11' of component 'ff_D_reset_clr_assinc' [C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/registrador16bits.vhd:45]
+INFO: [Synth 8-3491] module 'ff_D_reset_clr_assinc' declared at 'C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/ff_D_reset_clr_assinc.vhd:4' bound to instance 'ff12' of component 'ff_D_reset_clr_assinc' [C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/registrador16bits.vhd:46]
+INFO: [Synth 8-3491] module 'ff_D_reset_clr_assinc' declared at 'C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/ff_D_reset_clr_assinc.vhd:4' bound to instance 'ff13' of component 'ff_D_reset_clr_assinc' [C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/registrador16bits.vhd:47]
+INFO: [Synth 8-3491] module 'ff_D_reset_clr_assinc' declared at 'C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/ff_D_reset_clr_assinc.vhd:4' bound to instance 'ff14' of component 'ff_D_reset_clr_assinc' [C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/registrador16bits.vhd:48]
+INFO: [Synth 8-3491] module 'ff_D_reset_clr_assinc' declared at 'C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/ff_D_reset_clr_assinc.vhd:4' bound to instance 'ff15' of component 'ff_D_reset_clr_assinc' [C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/registrador16bits.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'registrador16bits' (3#1) [C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/registrador16bits.vhd:10]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1353.496 ; gain = 317.250
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1353.496 ; gain = 317.250
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1353.496 ; gain = 317.250
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1353.496 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/constrs_1/imports/PED1/Basys3_Master.xdc]
+Finished Parsing XDC File [C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/constrs_1/imports/PED1/Basys3_Master.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1422.449 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:39 ; elapsed = 00:00:31 . Memory (MB): peak = 1515.148 ; gain = 478.902
+26 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:52 ; elapsed = 00:00:48 . Memory (MB): peak = 1515.148 ; gain = 514.113
+open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1532.992 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.135 . Memory (MB): peak = 2147.684 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.135 . Memory (MB): peak = 2147.684 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2147.684 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 2208.402 ; gain = 689.469
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Oct 15 11:04:29 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.runs/synth_1/runme.log
+[Fri Oct 15 11:04:29 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Oct 15 11:34:49 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.runs/synth_1/runme.log
+[Fri Oct 15 11:34:49 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.runs/impl_1/runme.log
+close_design
+close_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2258.250 ; gain = 0.465
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Oct 16 11:53:55 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.runs/synth_1/runme.log
+[Sat Oct 16 11:53:55 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Oct 16 12:25:46 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.runs/synth_1/runme.log
+[Sat Oct 16 12:25:47 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.runs/impl_1/runme.log
+close_design
+open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2258.250 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.485 . Memory (MB): peak = 2258.250 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.487 . Memory (MB): peak = 2258.250 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2258.250 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 2258.250 ; gain = 0.000
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: registrador16bits
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2258.250 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'registrador16bits' [C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/registrador16bits.vhd:10]
+INFO: [Synth 8-3491] module 'divisor_clock' declared at 'C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/imports/new/divisor_clock.vhd:6' bound to instance 'clock' of component 'divisor_clock' [C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/registrador16bits.vhd:32]
+INFO: [Synth 8-638] synthesizing module 'divisor_clock' [C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/imports/new/divisor_clock.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'divisor_clock' (1#1) [C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/imports/new/divisor_clock.vhd:12]
+INFO: [Synth 8-3491] module 'ff_D_reset_clr_assinc' declared at 'C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/ff_D_reset_clr_assinc.vhd:4' bound to instance 'ff00' of component 'ff_D_reset_clr_assinc' [C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/registrador16bits.vhd:34]
+INFO: [Synth 8-638] synthesizing module 'ff_D_reset_clr_assinc' [C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/ff_D_reset_clr_assinc.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'ff_D_reset_clr_assinc' (2#1) [C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/ff_D_reset_clr_assinc.vhd:11]
+INFO: [Synth 8-3491] module 'ff_D_reset_clr_assinc' declared at 'C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/ff_D_reset_clr_assinc.vhd:4' bound to instance 'ff01' of component 'ff_D_reset_clr_assinc' [C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/registrador16bits.vhd:35]
+INFO: [Synth 8-3491] module 'ff_D_reset_clr_assinc' declared at 'C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/ff_D_reset_clr_assinc.vhd:4' bound to instance 'ff02' of component 'ff_D_reset_clr_assinc' [C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/registrador16bits.vhd:36]
+INFO: [Synth 8-3491] module 'ff_D_reset_clr_assinc' declared at 'C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/ff_D_reset_clr_assinc.vhd:4' bound to instance 'ff03' of component 'ff_D_reset_clr_assinc' [C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/registrador16bits.vhd:37]
+INFO: [Synth 8-3491] module 'ff_D_reset_clr_assinc' declared at 'C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/ff_D_reset_clr_assinc.vhd:4' bound to instance 'ff04' of component 'ff_D_reset_clr_assinc' [C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/registrador16bits.vhd:38]
+INFO: [Synth 8-3491] module 'ff_D_reset_clr_assinc' declared at 'C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/ff_D_reset_clr_assinc.vhd:4' bound to instance 'ff05' of component 'ff_D_reset_clr_assinc' [C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/registrador16bits.vhd:39]
+INFO: [Synth 8-3491] module 'ff_D_reset_clr_assinc' declared at 'C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/ff_D_reset_clr_assinc.vhd:4' bound to instance 'ff06' of component 'ff_D_reset_clr_assinc' [C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/registrador16bits.vhd:40]
+INFO: [Synth 8-3491] module 'ff_D_reset_clr_assinc' declared at 'C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/ff_D_reset_clr_assinc.vhd:4' bound to instance 'ff07' of component 'ff_D_reset_clr_assinc' [C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/registrador16bits.vhd:41]
+INFO: [Synth 8-3491] module 'ff_D_reset_clr_assinc' declared at 'C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/ff_D_reset_clr_assinc.vhd:4' bound to instance 'ff08' of component 'ff_D_reset_clr_assinc' [C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/registrador16bits.vhd:42]
+INFO: [Synth 8-3491] module 'ff_D_reset_clr_assinc' declared at 'C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/ff_D_reset_clr_assinc.vhd:4' bound to instance 'ff09' of component 'ff_D_reset_clr_assinc' [C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/registrador16bits.vhd:43]
+INFO: [Synth 8-3491] module 'ff_D_reset_clr_assinc' declared at 'C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/ff_D_reset_clr_assinc.vhd:4' bound to instance 'ff10' of component 'ff_D_reset_clr_assinc' [C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/registrador16bits.vhd:44]
+INFO: [Synth 8-3491] module 'ff_D_reset_clr_assinc' declared at 'C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/ff_D_reset_clr_assinc.vhd:4' bound to instance 'ff11' of component 'ff_D_reset_clr_assinc' [C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/registrador16bits.vhd:45]
+INFO: [Synth 8-3491] module 'ff_D_reset_clr_assinc' declared at 'C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/ff_D_reset_clr_assinc.vhd:4' bound to instance 'ff12' of component 'ff_D_reset_clr_assinc' [C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/registrador16bits.vhd:46]
+INFO: [Synth 8-3491] module 'ff_D_reset_clr_assinc' declared at 'C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/ff_D_reset_clr_assinc.vhd:4' bound to instance 'ff13' of component 'ff_D_reset_clr_assinc' [C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/registrador16bits.vhd:47]
+INFO: [Synth 8-3491] module 'ff_D_reset_clr_assinc' declared at 'C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/ff_D_reset_clr_assinc.vhd:4' bound to instance 'ff14' of component 'ff_D_reset_clr_assinc' [C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/registrador16bits.vhd:48]
+INFO: [Synth 8-3491] module 'ff_D_reset_clr_assinc' declared at 'C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/ff_D_reset_clr_assinc.vhd:4' bound to instance 'ff15' of component 'ff_D_reset_clr_assinc' [C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/registrador16bits.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'registrador16bits' (3#1) [C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/registrador16bits.vhd:10]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 2258.250 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 2258.250 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 2258.250 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2258.250 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/constrs_1/imports/PED1/Basys3_Master.xdc]
+Finished Parsing XDC File [C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/constrs_1/imports/PED1/Basys3_Master.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2316.859 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 2316.859 ; gain = 58.609
+25 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:22 . Memory (MB): peak = 2316.859 ; gain = 58.609
+close [ open {C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/ff_D_reset.vhd} w ]
+add_files {{C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/ff_D_reset.vhd}}
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Oct 16 13:01:22 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.runs/synth_1/runme.log
+[Sat Oct 16 13:01:22 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.runs/impl_1/runme.log
+reset_run synth_1
+set_property is_enabled false [get_files  {{C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/ff_D_reset.vhd}}]
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Oct 16 13:02:10 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.runs/synth_1/runme.log
+[Sat Oct 16 13:02:10 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.runs/impl_1/runme.log
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2530.781 ; gain = 73.086
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'registrador16bits' [C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/registrador16bits.vhd:10]
+INFO: [Synth 8-3491] module 'divisor_clock' declared at 'C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/imports/new/divisor_clock.vhd:6' bound to instance 'clock' of component 'divisor_clock' [C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/registrador16bits.vhd:51]
+INFO: [Synth 8-638] synthesizing module 'divisor_clock' [C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/imports/new/divisor_clock.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'divisor_clock' (1#1) [C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/imports/new/divisor_clock.vhd:12]
+INFO: [Synth 8-3491] module 'ff_D_reset_clr_assinc' declared at 'C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/ff_D_reset_clr_assinc.vhd:4' bound to instance 'ff00' of component 'ff_D_reset_clr_assinc' [C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/registrador16bits.vhd:53]
+INFO: [Synth 8-638] synthesizing module 'ff_D_reset_clr_assinc' [C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/ff_D_reset_clr_assinc.vhd:11]
+INFO: [Synth 8-226] default block is never used [C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/ff_D_reset_clr_assinc.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'ff_D_reset_clr_assinc' (2#1) [C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/ff_D_reset_clr_assinc.vhd:11]
+INFO: [Synth 8-3491] module 'ff_D_reset_clr_assinc' declared at 'C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/ff_D_reset_clr_assinc.vhd:4' bound to instance 'ff01' of component 'ff_D_reset_clr_assinc' [C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/registrador16bits.vhd:54]
+INFO: [Synth 8-3491] module 'ff_D_reset_clr_assinc' declared at 'C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/ff_D_reset_clr_assinc.vhd:4' bound to instance 'ff02' of component 'ff_D_reset_clr_assinc' [C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/registrador16bits.vhd:55]
+INFO: [Synth 8-3491] module 'ff_D_reset_clr_assinc' declared at 'C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/ff_D_reset_clr_assinc.vhd:4' bound to instance 'ff03' of component 'ff_D_reset_clr_assinc' [C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/registrador16bits.vhd:56]
+INFO: [Synth 8-3491] module 'ff_D_reset_clr_assinc' declared at 'C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/ff_D_reset_clr_assinc.vhd:4' bound to instance 'ff04' of component 'ff_D_reset_clr_assinc' [C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/registrador16bits.vhd:57]
+INFO: [Synth 8-3491] module 'ff_D_reset_clr_assinc' declared at 'C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/ff_D_reset_clr_assinc.vhd:4' bound to instance 'ff05' of component 'ff_D_reset_clr_assinc' [C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/registrador16bits.vhd:58]
+INFO: [Synth 8-3491] module 'ff_D_reset_clr_assinc' declared at 'C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/ff_D_reset_clr_assinc.vhd:4' bound to instance 'ff06' of component 'ff_D_reset_clr_assinc' [C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/registrador16bits.vhd:59]
+INFO: [Synth 8-3491] module 'ff_D_reset_clr_assinc' declared at 'C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/ff_D_reset_clr_assinc.vhd:4' bound to instance 'ff07' of component 'ff_D_reset_clr_assinc' [C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/registrador16bits.vhd:60]
+INFO: [Synth 8-3491] module 'ff_D_reset_clr_assinc' declared at 'C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/ff_D_reset_clr_assinc.vhd:4' bound to instance 'ff08' of component 'ff_D_reset_clr_assinc' [C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/registrador16bits.vhd:61]
+INFO: [Synth 8-3491] module 'ff_D_reset_clr_assinc' declared at 'C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/ff_D_reset_clr_assinc.vhd:4' bound to instance 'ff09' of component 'ff_D_reset_clr_assinc' [C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/registrador16bits.vhd:62]
+INFO: [Synth 8-3491] module 'ff_D_reset_clr_assinc' declared at 'C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/ff_D_reset_clr_assinc.vhd:4' bound to instance 'ff10' of component 'ff_D_reset_clr_assinc' [C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/registrador16bits.vhd:63]
+INFO: [Synth 8-3491] module 'ff_D_reset_clr_assinc' declared at 'C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/ff_D_reset_clr_assinc.vhd:4' bound to instance 'ff11' of component 'ff_D_reset_clr_assinc' [C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/registrador16bits.vhd:64]
+INFO: [Synth 8-3491] module 'ff_D_reset_clr_assinc' declared at 'C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/ff_D_reset_clr_assinc.vhd:4' bound to instance 'ff12' of component 'ff_D_reset_clr_assinc' [C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/registrador16bits.vhd:65]
+INFO: [Synth 8-3491] module 'ff_D_reset_clr_assinc' declared at 'C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/ff_D_reset_clr_assinc.vhd:4' bound to instance 'ff13' of component 'ff_D_reset_clr_assinc' [C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/registrador16bits.vhd:66]
+INFO: [Synth 8-3491] module 'ff_D_reset_clr_assinc' declared at 'C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/ff_D_reset_clr_assinc.vhd:4' bound to instance 'ff14' of component 'ff_D_reset_clr_assinc' [C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/registrador16bits.vhd:67]
+INFO: [Synth 8-3491] module 'ff_D_reset_clr_assinc' declared at 'C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/ff_D_reset_clr_assinc.vhd:4' bound to instance 'ff15' of component 'ff_D_reset_clr_assinc' [C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/registrador16bits.vhd:68]
+INFO: [Synth 8-256] done synthesizing module 'registrador16bits' (3#1) [C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/registrador16bits.vhd:10]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2552.188 ; gain = 94.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2576.078 ; gain = 118.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2576.078 ; gain = 118.383
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2578.484 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/constrs_1/imports/PED1/Basys3_Master.xdc]
+Finished Parsing XDC File [C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/constrs_1/imports/PED1/Basys3_Master.xdc]
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:26 . Memory (MB): peak = 2578.484 ; gain = 120.789
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Oct 16 13:20:39 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.runs/synth_1/runme.log
+[Sat Oct 16 13:20:39 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.runs/impl_1/runme.log
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+close [ open {C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/FF_JK_reset.vhd} w ]
+add_files {{C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/FF_JK_reset.vhd}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/FF_JK_reset.vhd}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/FF_JK_reset.vhd}}
+file delete -force {C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/FF_JK_reset.vhd}
+export_ip_user_files -of_objects  [get_files {{C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/ff_D_reset_clr_assinc.vhd}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/ff_D_reset_clr_assinc.vhd}}
+file delete -force {C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/ff_D_reset_clr_assinc.vhd}
+export_ip_user_files -of_objects  [get_files {{C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/ff_D_reset.vhd}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/ff_D_reset.vhd}}
+file delete -force {C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/ff_D_reset.vhd}
+close [ open {C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/ff_D_reset.vhd} w ]
+add_files {{C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.srcs/sources_1/new/ff_D_reset.vhd}}
+update_compile_order -fileset sources_1
+ERROR: [Common 17-180] Spawn failed: No such file or directory
+ERROR: [Common 17-180] Spawn failed: No such file or directory
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Caetano\Desktop\PED1\Semana 13\Trabalho_6_Grupo_12\Trabalho_6_Grupo_12.srcs\sources_1\new\FF_JK_reset.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Caetano\Desktop\PED1\Semana 13\Trabalho_6_Grupo_12\Trabalho_6_Grupo_12.srcs\sources_1\new\ff_D_reset_clr_assinc.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Caetano\Desktop\PED1\Semana 13\Trabalho_6_Grupo_12\Trabalho_6_Grupo_12.srcs\sources_1\imports\new\divisor_clock.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Caetano\Desktop\PED1\Semana 13\Trabalho_6_Grupo_12\Trabalho_6_Grupo_12.srcs\sources_1\imports\new\ff_D_reset_slr_assinc.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Caetano\Desktop\PED1\Semana 13\Trabalho_6_Grupo_12\Trabalho_6_Grupo_12.srcs\sources_1\new\ff_D_reset.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Caetano\Desktop\PED1\Semana 13\Trabalho_6_Grupo_12\Trabalho_6_Grupo_12.srcs\sources_1\new\registrador16bits.vhd:]
+ERROR: [Common 17-180] Spawn failed: No such file or directory
+ERROR: [Common 17-180] Spawn failed: No such file or directory
+ERROR: [Common 17-180] Spawn failed: No such file or directory
+ERROR: [Common 17-180] Spawn failed: No such file or directory
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Oct 16 14:08:14 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.runs/synth_1/runme.log
+[Sat Oct 16 14:08:14 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.runs/impl_1/runme.log
+ERROR: [Common 17-180] Spawn failed: No such file or directory
+ERROR: [Common 17-180] Spawn failed: No such file or directory
+ERROR: [Common 17-180] Spawn failed: No such file or directory
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Oct 16 14:09:21 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.runs/synth_1/runme.log
+[Sat Oct 16 14:09:21 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Oct 16 14:10:54 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.runs/synth_1/runme.log
+[Sat Oct 16 14:10:54 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Caetano/Desktop/PED1/Semana 13/Trabalho_6_Grupo_12/Trabalho_6_Grupo_12.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Oct 16 15:13:15 2021...
