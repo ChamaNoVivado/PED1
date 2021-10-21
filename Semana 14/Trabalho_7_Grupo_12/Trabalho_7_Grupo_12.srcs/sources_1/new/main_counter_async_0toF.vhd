@@ -7,7 +7,8 @@ entity main_counter_async_0toF is
            Rst : in STD_LOGIC;
            led : out STD_LOGIC;
            seg : out STD_LOGIC_VECTOR (6 downto 0);
-           an : out STD_LOGIC_VECTOR (3 downto 0));
+           an : out STD_LOGIC_VECTOR (3 downto 0):= "1110");
+           -- an: mantem somente o primeiro painel BCD ligado
 end main_counter_async_0toF;
 
 architecture Behavioral of main_counter_async_0toF is
@@ -23,17 +24,35 @@ component divisor_clock is
            clk_1hz : out STD_LOGIC);
 end component;
 
+component ff_jk is
+    Port ( J, K, CLR : in STD_LOGIC;
+           clk_counter : in STD_LOGIC;
+           Q, notQ: out STD_LOGIC);
+end component;
+
     signal clk_1hz_signal : STD_LOGIC;
-    signal clk_and_En : STD_LOGIC;
+    signal habilitador : STD_LOGIC;
     signal sA, sB, sC, sD : STD_LOGIC;
+    signal notA, notB, notC, notD : STD_LOGIC;
 
 begin
 
-    clock: divisor_clock port map (CLR => Rst, clk => clk, clk_1hz => clk_1hz_signal);
+    clock : divisor_clock port map (CLR => Rst, clk => clk, clk_1hz => clk_1hz_signal);
+    -- Recebe clock de 100Mhz da Basys3 e retorna 1hz
     
-    ff00: flipfrops port map (J => 1, K => 1, Q => sA,  clk_dividido => clk_1hz_signal,  CLR => Rst);
-    ff01: flipfrops port map (J => 1, K => 1, Q => sB,  clk_dividido => clk_1hz_signal,  CLR => Rst);
-    ff02: flipfrops port map (J => 1, K => 1, Q => sC,  clk_dividido => clk_1hz_signal,  CLR => Rst);
-    ff03: flipfrops port map (J => 1, K => 1, Q => sD,  clk_dividido => clk_1hz_signal,  CLR => Rst);
+    habilitador <= not(clk_1hz_signal AND En);
+    -- habilita a passagem de clock quando a entrada En está em 1
+    
+    ffA : ff_jk port map (J=>'1',K=>'1', clk_counter => habilitador, CLR => Rst, Q => sA, notQ => notA);
+    ffB : ff_jk port map (J=>'1',K=>'1', clk_counter => notA,        CLR => Rst, Q => sB, notQ => notB);
+    ffC : ff_jk port map (J=>'1',K=>'1', clk_counter => notB,        CLR => Rst, Q => sC, notQ => notC);
+    ffD : ff_jk port map (J=>'1',K=>'1', clk_counter => notC,        CLR => Rst, Q => sD);
+    -- Conta de acordo com a entrada de clock recebida do habilitador, usando FF JK em modo T
+    
+    display :  BCD_7S_0toF port map (sw(0) => sA, sw(1) => sB, sw(2) => sC, sw(3) => sD, seg => seg);
+    -- Mostra os valores do contador no painel BCD
+    
+    led <= (sA AND sB AND sC AND sD); 
+    -- Led que indica o final da contagem 
 
 end Behavioral;
