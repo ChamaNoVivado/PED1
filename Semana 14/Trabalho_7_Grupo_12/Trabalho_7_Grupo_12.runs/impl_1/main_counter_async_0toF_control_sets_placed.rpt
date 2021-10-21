@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Thu Oct 21 12:24:24 2021
+| Date         : Thu Oct 21 13:13:37 2021
 | Host         : Pedroo running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file main_counter_async_0toF_control_sets_placed.rpt
 | Design       : main_counter_async_0toF
@@ -75,8 +75,8 @@ Table of Contents
 +--------------------+---------------+------------------+------------------+----------------+--------------+
 | ~clock/clk_counter |               | Rst_IBUF         |                1 |              1 |         1.00 |
 |  ffA/sA            |               | Rst_IBUF         |                1 |              1 |         1.00 |
-|  ffB/sB            |               | Rst_IBUF         |                1 |              1 |         1.00 |
 |  ffC/sC            |               | Rst_IBUF         |                1 |              1 |         1.00 |
+|  ffB/sB            |               | Rst_IBUF         |                1 |              1 |         1.00 |
 | ~clk_IBUF_BUFG     |               | Rst_IBUF         |                8 |             28 |         3.50 |
 +--------------------+---------------+------------------+------------------+----------------+--------------+
 

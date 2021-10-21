@@ -2,17 +2,11 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Thu Oct 21 13:20:20 2021
-# Process ID: 16584
+# Start of session at: Thu Oct 21 13:12:40 2021
+# Process ID: 19812
 # Current directory: C:/Users/pedro/OneDrive/Documentos/GitHub/PED1/Semana 14/Trabalho_7_Grupo_12/Trabalho_7_Grupo_12.runs/impl_1
 # Command line: vivado.exe -log main_counter_async_0toF.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source main_counter_async_0toF.tcl -notrace
 # Log file: C:/Users/pedro/OneDrive/Documentos/GitHub/PED1/Semana 14/Trabalho_7_Grupo_12/Trabalho_7_Grupo_12.runs/impl_1/main_counter_async_0toF.vdi
 # Journal file: C:/Users/pedro/OneDrive/Documentos/GitHub/PED1/Semana 14/Trabalho_7_Grupo_12/Trabalho_7_Grupo_12.runs/impl_1\vivado.jou
 #-----------------------------------------------------------
 source main_counter_async_0toF.tcl -notrace
-Command: open_checkpoint main_counter_async_0toF_routed.dcp
-
-Starting open_checkpoint Task
-
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.068 . Memory (MB): peak = 1001.973 ; gain = 0.000
-INFO: [Device 21-403] Loading part xc7a35tcpg236-1
