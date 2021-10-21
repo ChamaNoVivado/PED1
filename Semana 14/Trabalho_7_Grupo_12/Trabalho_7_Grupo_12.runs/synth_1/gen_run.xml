@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1634832700">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1634833756">
   <File Type="PA-TCL" Name="main_counter_async_0toF.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="main_counter_async_0toF_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="main_counter_async_0toF_reports.tcl"/>

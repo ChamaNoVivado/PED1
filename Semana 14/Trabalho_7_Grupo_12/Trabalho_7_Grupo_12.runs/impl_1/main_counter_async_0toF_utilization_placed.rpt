@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Thu Oct 21 13:13:37 2021
+| Date         : Thu Oct 21 13:31:06 2021
 | Host         : Pedroo running 64-bit major release  (build 9200)
 | Command      : report_utilization -file main_counter_async_0toF_utilization_placed.rpt -pb main_counter_async_0toF_utilization_placed.pb
 | Design       : main_counter_async_0toF
