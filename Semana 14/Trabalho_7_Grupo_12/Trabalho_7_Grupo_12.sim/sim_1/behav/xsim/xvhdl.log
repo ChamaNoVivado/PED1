@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Caetano/Desktop/PED1/Semana 14/Trabalho_7_Grupo_12/Trabalho_7_Grupo_12.srcs/sources_1/new/main_counter_async_0toF.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'main_counter_async_0toF'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Caetano/Desktop/PED1/Semana 14/Trabalho_7_Grupo_12/Trabalho_7_Grupo_12.srcs/sources_1/new/ff_jk.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ff_jk'

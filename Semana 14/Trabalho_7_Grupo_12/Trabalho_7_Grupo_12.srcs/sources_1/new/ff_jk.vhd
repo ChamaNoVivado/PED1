@@ -12,14 +12,14 @@ end ff_jk;
 
 architecture Behavioral of ff_jk is
 
-    signal s : std_logic;
+    signal s : std_logic:='1';
 
 begin
     process (clk_counter)
     begin
         if CLR = '1' then 
             s <= '0';
-        elsif clk_counter ='1'  then 
+        elsif falling_edge(clk_counter) then 
             if ( J='0' and K ='0') then 
                 s <= s;
             elsif ( J='0' and K ='1') then 

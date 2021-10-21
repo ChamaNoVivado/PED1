@@ -1,0 +1,4 @@
+Running: xsim.dir/main_counter_async_0toF_behav/xsimk.exe -simmode gui -wdb main_counter_async_0toF_behav.wdb -simrunnum 0 -socket 51469
+Design successfully loaded
+Design Loading Memory Usage: 5740 KB (Peak: 5740 KB)
+Design Loading CPU Usage: 31 ms
