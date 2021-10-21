@@ -1,8 +1,8 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Thu Oct 21 11:48:35 2021
-| Host         : DESKTOP-0VQB5DC running 64-bit major release  (build 9200)
+| Date         : Thu Oct 21 13:31:33 2021
+| Host         : Pedroo running 64-bit major release  (build 9200)
 | Command      : report_drc -file main_counter_async_0toF_drc_routed.rpt -pb main_counter_async_0toF_drc_routed.pb -rpx main_counter_async_0toF_drc_routed.rpx
 | Design       : main_counter_async_0toF
 | Device       : xc7a35tcpg236-1
