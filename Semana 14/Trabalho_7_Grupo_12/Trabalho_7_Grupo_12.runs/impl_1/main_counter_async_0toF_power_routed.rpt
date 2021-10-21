@@ -1,8 +1,8 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date             : Thu Oct 21 11:48:40 2021
-| Host             : DESKTOP-0VQB5DC running 64-bit major release  (build 9200)
+| Date             : Thu Oct 21 12:24:50 2021
+| Host             : Pedroo running 64-bit major release  (build 9200)
 | Command          : report_power -file main_counter_async_0toF_power_routed.rpt -pb main_counter_async_0toF_power_summary_routed.pb -rpx main_counter_async_0toF_power_routed.rpx
 | Design           : main_counter_async_0toF
 | Device           : xc7a35tcpg236-1
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.091        |
+| Total On-Chip Power (W)  | 0.097        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.020        |
+| Dynamic (W)              | 0.025        |
 | Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
 | Max Ambient (C)          | 84.5         |
@@ -59,9 +59,9 @@ Table of Contents
 |   CARRY4       |    <0.001 |        7 |      8150 |            0.09 |
 |   Others       |     0.000 |        8 |       --- |             --- |
 | Signals        |    <0.001 |       56 |       --- |             --- |
-| I/O            |     0.018 |       15 |       106 |           14.15 |
+| I/O            |     0.024 |       15 |       106 |           14.15 |
 | Static Power   |     0.072 |          |           |                 |
-| Total          |     0.091 |          |           |                 |
+| Total          |     0.097 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -73,7 +73,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Vccint    |       1.000 |     0.011 |       0.001 |      0.010 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.013 |       0.001 |      0.013 |       NA    | Unspecified | NA         |
-| Vcco33    |       3.300 |     0.006 |       0.005 |      0.001 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     0.008 |       0.007 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -140,7 +140,7 @@ Table of Contents
 +-------------------------+-----------+
 | Name                    | Power (W) |
 +-------------------------+-----------+
-| main_counter_async_0toF |     0.020 |
+| main_counter_async_0toF |     0.025 |
 +-------------------------+-----------+
 
 
