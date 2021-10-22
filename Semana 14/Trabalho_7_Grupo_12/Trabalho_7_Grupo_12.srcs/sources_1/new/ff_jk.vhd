@@ -18,7 +18,7 @@ begin
     process (clk_counter)
     begin
         if CLR = '1' then 
-            s <= '0';
+            s <= '1';
         elsif falling_edge(clk_counter) then 
             if ( J='0' and K ='0') then 
                 s <= s;

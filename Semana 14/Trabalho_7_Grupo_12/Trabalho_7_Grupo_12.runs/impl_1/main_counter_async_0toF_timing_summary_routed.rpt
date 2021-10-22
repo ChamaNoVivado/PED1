@@ -1,8 +1,8 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Thu Oct 21 13:31:35 2021
-| Host         : Pedroo running 64-bit major release  (build 9200)
+| Date         : Thu Oct 21 21:17:44 2021
+| Host         : DESKTOP-0VQB5DC running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -max_paths 10 -file main_counter_async_0toF_timing_summary_routed.rpt -pb main_counter_async_0toF_timing_summary_routed.pb -rpx main_counter_async_0toF_timing_summary_routed.rpx -warn_on_violation
 | Design       : main_counter_async_0toF
 | Device       : 7a35t-cpg236
@@ -136,7 +136,7 @@ Table of Contents
 
     WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
     -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
-      4.908        0.000                      0                   28        0.311        0.000                      0                   28        4.500        0.000                       0                    29  
+      4.921        0.000                      0                   28        0.311        0.000                      0                   28        4.500        0.000                       0                    29  
 
 
 All user specified timing constraints are met.
@@ -159,7 +159,7 @@ sys_clk_pin  {0.000 5.000}      10.000          100.000
 
 Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
 -----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
-sys_clk_pin         4.908        0.000                      0                   28        0.311        0.000                      0                   28        4.500        0.000                       0                    29  
+sys_clk_pin         4.921        0.000                      0                   28        0.311        0.000                      0                   28        4.500        0.000                       0                    29  
 
 
 ------------------------------------------------------------------------------------------------
@@ -190,7 +190,7 @@ Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing 
 From Clock:  sys_clk_pin
   To Clock:  sys_clk_pin
 
-Setup :            0  Failing Endpoints,  Worst Slack        4.908ns,  Total Violation        0.000ns
+Setup :            0  Failing Endpoints,  Worst Slack        4.921ns,  Total Violation        0.000ns
 Hold  :            0  Failing Endpoints,  Worst Slack        0.311ns,  Total Violation        0.000ns
 PW    :            0  Failing Endpoints,  Worst Slack        4.500ns,  Total Violation        0.000ns
 ---------------------------------------------------------------------------------------------------
@@ -198,7 +198,7 @@ PW    :            0  Failing Endpoints,  Worst Slack        4.500ns,  Total Vio
 
 Max Delay Paths
 --------------------------------------------------------------------------------------
-Slack (MET) :             4.908ns  (required time - arrival time)
+Slack (MET) :             4.921ns  (required time - arrival time)
   Source:                 clock/count_reg[26]/C
                             (falling edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
   Destination:            clock/count_reg[25]/D
@@ -206,7 +206,7 @@ Slack (MET) :             4.908ns  (required time - arrival time)
   Path Group:             sys_clk_pin
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            10.000ns  (sys_clk_pin fall@15.000ns - sys_clk_pin fall@5.000ns)
-  Data Path Delay:        5.122ns  (logic 2.267ns (44.264%)  route 2.855ns (55.736%))
+  Data Path Delay:        5.108ns  (logic 2.267ns (44.379%)  route 2.841ns (55.621%))
   Logic Levels:           10  (CARRY4=7 LUT2=1 LUT6=2)
   Clock Path Skew:        0.000ns (DCD - SCD + CPR)
     Destination Clock Delay (DCD):    4.843ns = ( 19.843 - 15.000 ) 
@@ -235,30 +235,30 @@ Slack (MET) :             4.908ns  (required time - arrival time)
     SLICE_X64Y22         LUT6 (Prop_lut6_I4_O)        0.124    11.725 f  clock/s_1hz_i_6/O
                          net (fo=1, routed)           0.798    12.523    clock/s_1hz_i_6_n_0
     SLICE_X64Y20         LUT6 (Prop_lut6_I3_O)        0.124    12.647 f  clock/s_1hz_i_2/O
-                         net (fo=29, routed)          1.054    13.701    clock/load
-    SLICE_X65Y18         LUT2 (Prop_lut2_I1_O)        0.124    13.825 r  clock/count[0]_i_6/O
-                         net (fo=1, routed)           0.000    13.825    clock/count[0]_i_6_n_0
+                         net (fo=29, routed)          1.041    13.688    clock/load
+    SLICE_X65Y18         LUT2 (Prop_lut2_I1_O)        0.124    13.812 r  clock/count[0]_i_6/O
+                         net (fo=1, routed)           0.000    13.812    clock/count[0]_i_6_n_0
     SLICE_X65Y18         CARRY4 (Prop_carry4_S[0]_CO[3])
-                                                      0.532    14.357 r  clock/count_reg[0]_i_1/CO[3]
-                         net (fo=1, routed)           0.000    14.357    clock/count_reg[0]_i_1_n_0
+                                                      0.532    14.344 r  clock/count_reg[0]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    14.344    clock/count_reg[0]_i_1_n_0
     SLICE_X65Y19         CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.114    14.471 r  clock/count_reg[4]_i_1/CO[3]
-                         net (fo=1, routed)           0.000    14.471    clock/count_reg[4]_i_1_n_0
+                                                      0.114    14.458 r  clock/count_reg[4]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    14.458    clock/count_reg[4]_i_1_n_0
     SLICE_X65Y20         CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.114    14.585 r  clock/count_reg[8]_i_1/CO[3]
-                         net (fo=1, routed)           0.000    14.585    clock/count_reg[8]_i_1_n_0
+                                                      0.114    14.572 r  clock/count_reg[8]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    14.572    clock/count_reg[8]_i_1_n_0
     SLICE_X65Y21         CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.114    14.699 r  clock/count_reg[12]_i_1/CO[3]
-                         net (fo=1, routed)           0.000    14.699    clock/count_reg[12]_i_1_n_0
+                                                      0.114    14.686 r  clock/count_reg[12]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    14.686    clock/count_reg[12]_i_1_n_0
     SLICE_X65Y22         CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.114    14.813 r  clock/count_reg[16]_i_1/CO[3]
-                         net (fo=1, routed)           0.000    14.813    clock/count_reg[16]_i_1_n_0
+                                                      0.114    14.800 r  clock/count_reg[16]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    14.800    clock/count_reg[16]_i_1_n_0
     SLICE_X65Y23         CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.114    14.927 r  clock/count_reg[20]_i_1/CO[3]
-                         net (fo=1, routed)           0.000    14.927    clock/count_reg[20]_i_1_n_0
+                                                      0.114    14.914 r  clock/count_reg[20]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    14.914    clock/count_reg[20]_i_1_n_0
     SLICE_X65Y24         CARRY4 (Prop_carry4_CI_O[1])
-                                                      0.334    15.261 r  clock/count_reg[24]_i_1/O[1]
-                         net (fo=1, routed)           0.000    15.261    clock/count_reg[24]_i_1_n_6
+                                                      0.334    15.248 r  clock/count_reg[24]_i_1/O[1]
+                         net (fo=1, routed)           0.000    15.248    clock/count_reg[24]_i_1_n_6
     SLICE_X65Y24         FDCE                                         r  clock/count_reg[25]/D
   -------------------------------------------------------------------    -------------------
 
@@ -276,11 +276,11 @@ Slack (MET) :             4.908ns  (required time - arrival time)
     SLICE_X65Y24         FDCE (Setup_fdce_C_D)        0.065    20.169    clock/count_reg[25]
   -------------------------------------------------------------------
                          required time                         20.169    
-                         arrival time                         -15.261    
+                         arrival time                         -15.248    
   -------------------------------------------------------------------
-                         slack                                  4.908    
+                         slack                                  4.921    
 
-Slack (MET) :             5.002ns  (required time - arrival time)
+Slack (MET) :             5.015ns  (required time - arrival time)
   Source:                 clock/count_reg[26]/C
                             (falling edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
   Destination:            clock/count_reg[21]/D
@@ -288,7 +288,7 @@ Slack (MET) :             5.002ns  (required time - arrival time)
   Path Group:             sys_clk_pin
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            10.000ns  (sys_clk_pin fall@15.000ns - sys_clk_pin fall@5.000ns)
-  Data Path Delay:        5.008ns  (logic 2.153ns (42.995%)  route 2.855ns (57.005%))
+  Data Path Delay:        4.994ns  (logic 2.153ns (43.109%)  route 2.841ns (56.891%))
   Logic Levels:           9  (CARRY4=6 LUT2=1 LUT6=2)
   Clock Path Skew:        -0.020ns (DCD - SCD + CPR)
     Destination Clock Delay (DCD):    4.845ns = ( 19.845 - 15.000 ) 
@@ -317,27 +317,27 @@ Slack (MET) :             5.002ns  (required time - arrival time)
     SLICE_X64Y22         LUT6 (Prop_lut6_I4_O)        0.124    11.725 f  clock/s_1hz_i_6/O
                          net (fo=1, routed)           0.798    12.523    clock/s_1hz_i_6_n_0
     SLICE_X64Y20         LUT6 (Prop_lut6_I3_O)        0.124    12.647 f  clock/s_1hz_i_2/O
-                         net (fo=29, routed)          1.054    13.701    clock/load
-    SLICE_X65Y18         LUT2 (Prop_lut2_I1_O)        0.124    13.825 r  clock/count[0]_i_6/O
-                         net (fo=1, routed)           0.000    13.825    clock/count[0]_i_6_n_0
+                         net (fo=29, routed)          1.041    13.688    clock/load
+    SLICE_X65Y18         LUT2 (Prop_lut2_I1_O)        0.124    13.812 r  clock/count[0]_i_6/O
+                         net (fo=1, routed)           0.000    13.812    clock/count[0]_i_6_n_0
     SLICE_X65Y18         CARRY4 (Prop_carry4_S[0]_CO[3])
-                                                      0.532    14.357 r  clock/count_reg[0]_i_1/CO[3]
-                         net (fo=1, routed)           0.000    14.357    clock/count_reg[0]_i_1_n_0
+                                                      0.532    14.344 r  clock/count_reg[0]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    14.344    clock/count_reg[0]_i_1_n_0
     SLICE_X65Y19         CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.114    14.471 r  clock/count_reg[4]_i_1/CO[3]
-                         net (fo=1, routed)           0.000    14.471    clock/count_reg[4]_i_1_n_0
+                                                      0.114    14.458 r  clock/count_reg[4]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    14.458    clock/count_reg[4]_i_1_n_0
     SLICE_X65Y20         CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.114    14.585 r  clock/count_reg[8]_i_1/CO[3]
-                         net (fo=1, routed)           0.000    14.585    clock/count_reg[8]_i_1_n_0
+                                                      0.114    14.572 r  clock/count_reg[8]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    14.572    clock/count_reg[8]_i_1_n_0
     SLICE_X65Y21         CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.114    14.699 r  clock/count_reg[12]_i_1/CO[3]
-                         net (fo=1, routed)           0.000    14.699    clock/count_reg[12]_i_1_n_0
+                                                      0.114    14.686 r  clock/count_reg[12]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    14.686    clock/count_reg[12]_i_1_n_0
     SLICE_X65Y22         CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.114    14.813 r  clock/count_reg[16]_i_1/CO[3]
-                         net (fo=1, routed)           0.000    14.813    clock/count_reg[16]_i_1_n_0
+                                                      0.114    14.800 r  clock/count_reg[16]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    14.800    clock/count_reg[16]_i_1_n_0
     SLICE_X65Y23         CARRY4 (Prop_carry4_CI_O[1])
-                                                      0.334    15.147 r  clock/count_reg[20]_i_1/O[1]
-                         net (fo=1, routed)           0.000    15.147    clock/count_reg[20]_i_1_n_6
+                                                      0.334    15.134 r  clock/count_reg[20]_i_1/O[1]
+                         net (fo=1, routed)           0.000    15.134    clock/count_reg[20]_i_1_n_6
     SLICE_X65Y23         FDCE                                         r  clock/count_reg[21]/D
   -------------------------------------------------------------------    -------------------
 
@@ -355,11 +355,11 @@ Slack (MET) :             5.002ns  (required time - arrival time)
     SLICE_X65Y23         FDCE (Setup_fdce_C_D)        0.065    20.149    clock/count_reg[21]
   -------------------------------------------------------------------
                          required time                         20.149    
-                         arrival time                         -15.147    
+                         arrival time                         -15.134    
   -------------------------------------------------------------------
-                         slack                                  5.002    
+                         slack                                  5.015    
 
-Slack (MET) :             5.003ns  (required time - arrival time)
+Slack (MET) :             5.016ns  (required time - arrival time)
   Source:                 clock/count_reg[26]/C
                             (falling edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
   Destination:            clock/count_reg[26]/D
@@ -367,7 +367,7 @@ Slack (MET) :             5.003ns  (required time - arrival time)
   Path Group:             sys_clk_pin
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            10.000ns  (sys_clk_pin fall@15.000ns - sys_clk_pin fall@5.000ns)
-  Data Path Delay:        5.027ns  (logic 2.172ns (43.211%)  route 2.855ns (56.789%))
+  Data Path Delay:        5.013ns  (logic 2.172ns (43.325%)  route 2.841ns (56.675%))
   Logic Levels:           10  (CARRY4=7 LUT2=1 LUT6=2)
   Clock Path Skew:        0.000ns (DCD - SCD + CPR)
     Destination Clock Delay (DCD):    4.843ns = ( 19.843 - 15.000 ) 
@@ -396,30 +396,30 @@ Slack (MET) :             5.003ns  (required time - arrival time)
     SLICE_X64Y22         LUT6 (Prop_lut6_I4_O)        0.124    11.725 f  clock/s_1hz_i_6/O
                          net (fo=1, routed)           0.798    12.523    clock/s_1hz_i_6_n_0
     SLICE_X64Y20         LUT6 (Prop_lut6_I3_O)        0.124    12.647 f  clock/s_1hz_i_2/O
-                         net (fo=29, routed)          1.054    13.701    clock/load
-    SLICE_X65Y18         LUT2 (Prop_lut2_I1_O)        0.124    13.825 r  clock/count[0]_i_6/O
-                         net (fo=1, routed)           0.000    13.825    clock/count[0]_i_6_n_0
+                         net (fo=29, routed)          1.041    13.688    clock/load
+    SLICE_X65Y18         LUT2 (Prop_lut2_I1_O)        0.124    13.812 r  clock/count[0]_i_6/O
+                         net (fo=1, routed)           0.000    13.812    clock/count[0]_i_6_n_0
     SLICE_X65Y18         CARRY4 (Prop_carry4_S[0]_CO[3])
-                                                      0.532    14.357 r  clock/count_reg[0]_i_1/CO[3]
-                         net (fo=1, routed)           0.000    14.357    clock/count_reg[0]_i_1_n_0
+                                                      0.532    14.344 r  clock/count_reg[0]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    14.344    clock/count_reg[0]_i_1_n_0
     SLICE_X65Y19         CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.114    14.471 r  clock/count_reg[4]_i_1/CO[3]
-                         net (fo=1, routed)           0.000    14.471    clock/count_reg[4]_i_1_n_0
+                                                      0.114    14.458 r  clock/count_reg[4]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    14.458    clock/count_reg[4]_i_1_n_0
     SLICE_X65Y20         CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.114    14.585 r  clock/count_reg[8]_i_1/CO[3]
-                         net (fo=1, routed)           0.000    14.585    clock/count_reg[8]_i_1_n_0
+                                                      0.114    14.572 r  clock/count_reg[8]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    14.572    clock/count_reg[8]_i_1_n_0
     SLICE_X65Y21         CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.114    14.699 r  clock/count_reg[12]_i_1/CO[3]
-                         net (fo=1, routed)           0.000    14.699    clock/count_reg[12]_i_1_n_0
+                                                      0.114    14.686 r  clock/count_reg[12]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    14.686    clock/count_reg[12]_i_1_n_0
     SLICE_X65Y22         CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.114    14.813 r  clock/count_reg[16]_i_1/CO[3]
-                         net (fo=1, routed)           0.000    14.813    clock/count_reg[16]_i_1_n_0
+                                                      0.114    14.800 r  clock/count_reg[16]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    14.800    clock/count_reg[16]_i_1_n_0
     SLICE_X65Y23         CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.114    14.927 r  clock/count_reg[20]_i_1/CO[3]
-                         net (fo=1, routed)           0.000    14.927    clock/count_reg[20]_i_1_n_0
+                                                      0.114    14.914 r  clock/count_reg[20]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    14.914    clock/count_reg[20]_i_1_n_0
     SLICE_X65Y24         CARRY4 (Prop_carry4_CI_O[2])
-                                                      0.239    15.166 r  clock/count_reg[24]_i_1/O[2]
-                         net (fo=1, routed)           0.000    15.166    clock/count_reg[24]_i_1_n_5
+                                                      0.239    15.153 r  clock/count_reg[24]_i_1/O[2]
+                         net (fo=1, routed)           0.000    15.153    clock/count_reg[24]_i_1_n_5
     SLICE_X65Y24         FDCE                                         r  clock/count_reg[26]/D
   -------------------------------------------------------------------    -------------------
 
@@ -437,11 +437,11 @@ Slack (MET) :             5.003ns  (required time - arrival time)
     SLICE_X65Y24         FDCE (Setup_fdce_C_D)        0.065    20.169    clock/count_reg[26]
   -------------------------------------------------------------------
                          required time                         20.169    
-                         arrival time                         -15.166    
+                         arrival time                         -15.153    
   -------------------------------------------------------------------
-                         slack                                  5.003    
+                         slack                                  5.016    
 
-Slack (MET) :             5.019ns  (required time - arrival time)
+Slack (MET) :             5.032ns  (required time - arrival time)
   Source:                 clock/count_reg[26]/C
                             (falling edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
   Destination:            clock/count_reg[24]/D
@@ -449,7 +449,7 @@ Slack (MET) :             5.019ns  (required time - arrival time)
   Path Group:             sys_clk_pin
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            10.000ns  (sys_clk_pin fall@15.000ns - sys_clk_pin fall@5.000ns)
-  Data Path Delay:        5.011ns  (logic 2.156ns (43.029%)  route 2.855ns (56.970%))
+  Data Path Delay:        4.997ns  (logic 2.156ns (43.144%)  route 2.841ns (56.856%))
   Logic Levels:           10  (CARRY4=7 LUT2=1 LUT6=2)
   Clock Path Skew:        0.000ns (DCD - SCD + CPR)
     Destination Clock Delay (DCD):    4.843ns = ( 19.843 - 15.000 ) 
@@ -478,30 +478,30 @@ Slack (MET) :             5.019ns  (required time - arrival time)
     SLICE_X64Y22         LUT6 (Prop_lut6_I4_O)        0.124    11.725 f  clock/s_1hz_i_6/O
                          net (fo=1, routed)           0.798    12.523    clock/s_1hz_i_6_n_0
     SLICE_X64Y20         LUT6 (Prop_lut6_I3_O)        0.124    12.647 f  clock/s_1hz_i_2/O
-                         net (fo=29, routed)          1.054    13.701    clock/load
-    SLICE_X65Y18         LUT2 (Prop_lut2_I1_O)        0.124    13.825 r  clock/count[0]_i_6/O
-                         net (fo=1, routed)           0.000    13.825    clock/count[0]_i_6_n_0
+                         net (fo=29, routed)          1.041    13.688    clock/load
+    SLICE_X65Y18         LUT2 (Prop_lut2_I1_O)        0.124    13.812 r  clock/count[0]_i_6/O
+                         net (fo=1, routed)           0.000    13.812    clock/count[0]_i_6_n_0
     SLICE_X65Y18         CARRY4 (Prop_carry4_S[0]_CO[3])
-                                                      0.532    14.357 r  clock/count_reg[0]_i_1/CO[3]
-                         net (fo=1, routed)           0.000    14.357    clock/count_reg[0]_i_1_n_0
+                                                      0.532    14.344 r  clock/count_reg[0]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    14.344    clock/count_reg[0]_i_1_n_0
     SLICE_X65Y19         CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.114    14.471 r  clock/count_reg[4]_i_1/CO[3]
-                         net (fo=1, routed)           0.000    14.471    clock/count_reg[4]_i_1_n_0
+                                                      0.114    14.458 r  clock/count_reg[4]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    14.458    clock/count_reg[4]_i_1_n_0
     SLICE_X65Y20         CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.114    14.585 r  clock/count_reg[8]_i_1/CO[3]
-                         net (fo=1, routed)           0.000    14.585    clock/count_reg[8]_i_1_n_0
+                                                      0.114    14.572 r  clock/count_reg[8]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    14.572    clock/count_reg[8]_i_1_n_0
     SLICE_X65Y21         CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.114    14.699 r  clock/count_reg[12]_i_1/CO[3]
-                         net (fo=1, routed)           0.000    14.699    clock/count_reg[12]_i_1_n_0
+                                                      0.114    14.686 r  clock/count_reg[12]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    14.686    clock/count_reg[12]_i_1_n_0
     SLICE_X65Y22         CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.114    14.813 r  clock/count_reg[16]_i_1/CO[3]
-                         net (fo=1, routed)           0.000    14.813    clock/count_reg[16]_i_1_n_0
+                                                      0.114    14.800 r  clock/count_reg[16]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    14.800    clock/count_reg[16]_i_1_n_0
     SLICE_X65Y23         CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.114    14.927 r  clock/count_reg[20]_i_1/CO[3]
-                         net (fo=1, routed)           0.000    14.927    clock/count_reg[20]_i_1_n_0
+                                                      0.114    14.914 r  clock/count_reg[20]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    14.914    clock/count_reg[20]_i_1_n_0
     SLICE_X65Y24         CARRY4 (Prop_carry4_CI_O[0])
-                                                      0.223    15.150 r  clock/count_reg[24]_i_1/O[0]
-                         net (fo=1, routed)           0.000    15.150    clock/count_reg[24]_i_1_n_7
+                                                      0.223    15.137 r  clock/count_reg[24]_i_1/O[0]
+                         net (fo=1, routed)           0.000    15.137    clock/count_reg[24]_i_1_n_7
     SLICE_X65Y24         FDCE                                         r  clock/count_reg[24]/D
   -------------------------------------------------------------------    -------------------
 
@@ -519,11 +519,11 @@ Slack (MET) :             5.019ns  (required time - arrival time)
     SLICE_X65Y24         FDCE (Setup_fdce_C_D)        0.065    20.169    clock/count_reg[24]
   -------------------------------------------------------------------
                          required time                         20.169    
-                         arrival time                         -15.150    
+                         arrival time                         -15.137    
   -------------------------------------------------------------------
-                         slack                                  5.019    
+                         slack                                  5.032    
 
-Slack (MET) :             5.023ns  (required time - arrival time)
+Slack (MET) :             5.036ns  (required time - arrival time)
   Source:                 clock/count_reg[26]/C
                             (falling edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
   Destination:            clock/count_reg[23]/D
@@ -531,7 +531,7 @@ Slack (MET) :             5.023ns  (required time - arrival time)
   Path Group:             sys_clk_pin
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            10.000ns  (sys_clk_pin fall@15.000ns - sys_clk_pin fall@5.000ns)
-  Data Path Delay:        4.987ns  (logic 2.132ns (42.755%)  route 2.855ns (57.245%))
+  Data Path Delay:        4.973ns  (logic 2.132ns (42.869%)  route 2.841ns (57.131%))
   Logic Levels:           9  (CARRY4=6 LUT2=1 LUT6=2)
   Clock Path Skew:        -0.020ns (DCD - SCD + CPR)
     Destination Clock Delay (DCD):    4.845ns = ( 19.845 - 15.000 ) 
@@ -560,27 +560,27 @@ Slack (MET) :             5.023ns  (required time - arrival time)
     SLICE_X64Y22         LUT6 (Prop_lut6_I4_O)        0.124    11.725 f  clock/s_1hz_i_6/O
                          net (fo=1, routed)           0.798    12.523    clock/s_1hz_i_6_n_0
     SLICE_X64Y20         LUT6 (Prop_lut6_I3_O)        0.124    12.647 f  clock/s_1hz_i_2/O
-                         net (fo=29, routed)          1.054    13.701    clock/load
-    SLICE_X65Y18         LUT2 (Prop_lut2_I1_O)        0.124    13.825 r  clock/count[0]_i_6/O
-                         net (fo=1, routed)           0.000    13.825    clock/count[0]_i_6_n_0
+                         net (fo=29, routed)          1.041    13.688    clock/load
+    SLICE_X65Y18         LUT2 (Prop_lut2_I1_O)        0.124    13.812 r  clock/count[0]_i_6/O
+                         net (fo=1, routed)           0.000    13.812    clock/count[0]_i_6_n_0
     SLICE_X65Y18         CARRY4 (Prop_carry4_S[0]_CO[3])
-                                                      0.532    14.357 r  clock/count_reg[0]_i_1/CO[3]
-                         net (fo=1, routed)           0.000    14.357    clock/count_reg[0]_i_1_n_0
+                                                      0.532    14.344 r  clock/count_reg[0]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    14.344    clock/count_reg[0]_i_1_n_0
     SLICE_X65Y19         CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.114    14.471 r  clock/count_reg[4]_i_1/CO[3]
-                         net (fo=1, routed)           0.000    14.471    clock/count_reg[4]_i_1_n_0
+                                                      0.114    14.458 r  clock/count_reg[4]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    14.458    clock/count_reg[4]_i_1_n_0
     SLICE_X65Y20         CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.114    14.585 r  clock/count_reg[8]_i_1/CO[3]
-                         net (fo=1, routed)           0.000    14.585    clock/count_reg[8]_i_1_n_0
+                                                      0.114    14.572 r  clock/count_reg[8]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    14.572    clock/count_reg[8]_i_1_n_0
     SLICE_X65Y21         CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.114    14.699 r  clock/count_reg[12]_i_1/CO[3]
-                         net (fo=1, routed)           0.000    14.699    clock/count_reg[12]_i_1_n_0
+                                                      0.114    14.686 r  clock/count_reg[12]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    14.686    clock/count_reg[12]_i_1_n_0
     SLICE_X65Y22         CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.114    14.813 r  clock/count_reg[16]_i_1/CO[3]
-                         net (fo=1, routed)           0.000    14.813    clock/count_reg[16]_i_1_n_0
+                                                      0.114    14.800 r  clock/count_reg[16]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    14.800    clock/count_reg[16]_i_1_n_0
     SLICE_X65Y23         CARRY4 (Prop_carry4_CI_O[3])
-                                                      0.313    15.126 r  clock/count_reg[20]_i_1/O[3]
-                         net (fo=1, routed)           0.000    15.126    clock/count_reg[20]_i_1_n_4
+                                                      0.313    15.113 r  clock/count_reg[20]_i_1/O[3]
+                         net (fo=1, routed)           0.000    15.113    clock/count_reg[20]_i_1_n_4
     SLICE_X65Y23         FDCE                                         r  clock/count_reg[23]/D
   -------------------------------------------------------------------    -------------------
 
@@ -598,11 +598,11 @@ Slack (MET) :             5.023ns  (required time - arrival time)
     SLICE_X65Y23         FDCE (Setup_fdce_C_D)        0.065    20.149    clock/count_reg[23]
   -------------------------------------------------------------------
                          required time                         20.149    
-                         arrival time                         -15.126    
+                         arrival time                         -15.113    
   -------------------------------------------------------------------
-                         slack                                  5.023    
+                         slack                                  5.036    
 
-Slack (MET) :             5.097ns  (required time - arrival time)
+Slack (MET) :             5.110ns  (required time - arrival time)
   Source:                 clock/count_reg[26]/C
                             (falling edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
   Destination:            clock/count_reg[22]/D
@@ -610,7 +610,7 @@ Slack (MET) :             5.097ns  (required time - arrival time)
   Path Group:             sys_clk_pin
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            10.000ns  (sys_clk_pin fall@15.000ns - sys_clk_pin fall@5.000ns)
-  Data Path Delay:        4.913ns  (logic 2.058ns (41.893%)  route 2.855ns (58.107%))
+  Data Path Delay:        4.899ns  (logic 2.058ns (42.006%)  route 2.841ns (57.994%))
   Logic Levels:           9  (CARRY4=6 LUT2=1 LUT6=2)
   Clock Path Skew:        -0.020ns (DCD - SCD + CPR)
     Destination Clock Delay (DCD):    4.845ns = ( 19.845 - 15.000 ) 
@@ -639,27 +639,27 @@ Slack (MET) :             5.097ns  (required time - arrival time)
     SLICE_X64Y22         LUT6 (Prop_lut6_I4_O)        0.124    11.725 f  clock/s_1hz_i_6/O
                          net (fo=1, routed)           0.798    12.523    clock/s_1hz_i_6_n_0
     SLICE_X64Y20         LUT6 (Prop_lut6_I3_O)        0.124    12.647 f  clock/s_1hz_i_2/O
-                         net (fo=29, routed)          1.054    13.701    clock/load
-    SLICE_X65Y18         LUT2 (Prop_lut2_I1_O)        0.124    13.825 r  clock/count[0]_i_6/O
-                         net (fo=1, routed)           0.000    13.825    clock/count[0]_i_6_n_0
+                         net (fo=29, routed)          1.041    13.688    clock/load
+    SLICE_X65Y18         LUT2 (Prop_lut2_I1_O)        0.124    13.812 r  clock/count[0]_i_6/O
+                         net (fo=1, routed)           0.000    13.812    clock/count[0]_i_6_n_0
     SLICE_X65Y18         CARRY4 (Prop_carry4_S[0]_CO[3])
-                                                      0.532    14.357 r  clock/count_reg[0]_i_1/CO[3]
-                         net (fo=1, routed)           0.000    14.357    clock/count_reg[0]_i_1_n_0
+                                                      0.532    14.344 r  clock/count_reg[0]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    14.344    clock/count_reg[0]_i_1_n_0
     SLICE_X65Y19         CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.114    14.471 r  clock/count_reg[4]_i_1/CO[3]
-                         net (fo=1, routed)           0.000    14.471    clock/count_reg[4]_i_1_n_0
+                                                      0.114    14.458 r  clock/count_reg[4]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    14.458    clock/count_reg[4]_i_1_n_0
     SLICE_X65Y20         CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.114    14.585 r  clock/count_reg[8]_i_1/CO[3]
-                         net (fo=1, routed)           0.000    14.585    clock/count_reg[8]_i_1_n_0
+                                                      0.114    14.572 r  clock/count_reg[8]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    14.572    clock/count_reg[8]_i_1_n_0
     SLICE_X65Y21         CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.114    14.699 r  clock/count_reg[12]_i_1/CO[3]
-                         net (fo=1, routed)           0.000    14.699    clock/count_reg[12]_i_1_n_0
+                                                      0.114    14.686 r  clock/count_reg[12]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    14.686    clock/count_reg[12]_i_1_n_0
     SLICE_X65Y22         CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.114    14.813 r  clock/count_reg[16]_i_1/CO[3]
-                         net (fo=1, routed)           0.000    14.813    clock/count_reg[16]_i_1_n_0
+                                                      0.114    14.800 r  clock/count_reg[16]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    14.800    clock/count_reg[16]_i_1_n_0
     SLICE_X65Y23         CARRY4 (Prop_carry4_CI_O[2])
-                                                      0.239    15.052 r  clock/count_reg[20]_i_1/O[2]
-                         net (fo=1, routed)           0.000    15.052    clock/count_reg[20]_i_1_n_5
+                                                      0.239    15.039 r  clock/count_reg[20]_i_1/O[2]
+                         net (fo=1, routed)           0.000    15.039    clock/count_reg[20]_i_1_n_5
     SLICE_X65Y23         FDCE                                         r  clock/count_reg[22]/D
   -------------------------------------------------------------------    -------------------
 
@@ -677,11 +677,11 @@ Slack (MET) :             5.097ns  (required time - arrival time)
     SLICE_X65Y23         FDCE (Setup_fdce_C_D)        0.065    20.149    clock/count_reg[22]
   -------------------------------------------------------------------
                          required time                         20.149    
-                         arrival time                         -15.052    
+                         arrival time                         -15.039    
   -------------------------------------------------------------------
-                         slack                                  5.097    
+                         slack                                  5.110    
 
-Slack (MET) :             5.113ns  (required time - arrival time)
+Slack (MET) :             5.126ns  (required time - arrival time)
   Source:                 clock/count_reg[26]/C
                             (falling edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
   Destination:            clock/count_reg[20]/D
@@ -689,7 +689,7 @@ Slack (MET) :             5.113ns  (required time - arrival time)
   Path Group:             sys_clk_pin
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            10.000ns  (sys_clk_pin fall@15.000ns - sys_clk_pin fall@5.000ns)
-  Data Path Delay:        4.897ns  (logic 2.042ns (41.703%)  route 2.855ns (58.297%))
+  Data Path Delay:        4.883ns  (logic 2.042ns (41.816%)  route 2.841ns (58.184%))
   Logic Levels:           9  (CARRY4=6 LUT2=1 LUT6=2)
   Clock Path Skew:        -0.020ns (DCD - SCD + CPR)
     Destination Clock Delay (DCD):    4.845ns = ( 19.845 - 15.000 ) 
@@ -718,27 +718,27 @@ Slack (MET) :             5.113ns  (required time - arrival time)
     SLICE_X64Y22         LUT6 (Prop_lut6_I4_O)        0.124    11.725 f  clock/s_1hz_i_6/O
                          net (fo=1, routed)           0.798    12.523    clock/s_1hz_i_6_n_0
     SLICE_X64Y20         LUT6 (Prop_lut6_I3_O)        0.124    12.647 f  clock/s_1hz_i_2/O
-                         net (fo=29, routed)          1.054    13.701    clock/load
-    SLICE_X65Y18         LUT2 (Prop_lut2_I1_O)        0.124    13.825 r  clock/count[0]_i_6/O
-                         net (fo=1, routed)           0.000    13.825    clock/count[0]_i_6_n_0
+                         net (fo=29, routed)          1.041    13.688    clock/load
+    SLICE_X65Y18         LUT2 (Prop_lut2_I1_O)        0.124    13.812 r  clock/count[0]_i_6/O
+                         net (fo=1, routed)           0.000    13.812    clock/count[0]_i_6_n_0
     SLICE_X65Y18         CARRY4 (Prop_carry4_S[0]_CO[3])
-                                                      0.532    14.357 r  clock/count_reg[0]_i_1/CO[3]
-                         net (fo=1, routed)           0.000    14.357    clock/count_reg[0]_i_1_n_0
+                                                      0.532    14.344 r  clock/count_reg[0]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    14.344    clock/count_reg[0]_i_1_n_0
     SLICE_X65Y19         CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.114    14.471 r  clock/count_reg[4]_i_1/CO[3]
-                         net (fo=1, routed)           0.000    14.471    clock/count_reg[4]_i_1_n_0
+                                                      0.114    14.458 r  clock/count_reg[4]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    14.458    clock/count_reg[4]_i_1_n_0
     SLICE_X65Y20         CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.114    14.585 r  clock/count_reg[8]_i_1/CO[3]
-                         net (fo=1, routed)           0.000    14.585    clock/count_reg[8]_i_1_n_0
+                                                      0.114    14.572 r  clock/count_reg[8]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    14.572    clock/count_reg[8]_i_1_n_0
     SLICE_X65Y21         CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.114    14.699 r  clock/count_reg[12]_i_1/CO[3]
-                         net (fo=1, routed)           0.000    14.699    clock/count_reg[12]_i_1_n_0
+                                                      0.114    14.686 r  clock/count_reg[12]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    14.686    clock/count_reg[12]_i_1_n_0
     SLICE_X65Y22         CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.114    14.813 r  clock/count_reg[16]_i_1/CO[3]
-                         net (fo=1, routed)           0.000    14.813    clock/count_reg[16]_i_1_n_0
+                                                      0.114    14.800 r  clock/count_reg[16]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    14.800    clock/count_reg[16]_i_1_n_0
     SLICE_X65Y23         CARRY4 (Prop_carry4_CI_O[0])
-                                                      0.223    15.036 r  clock/count_reg[20]_i_1/O[0]
-                         net (fo=1, routed)           0.000    15.036    clock/count_reg[20]_i_1_n_7
+                                                      0.223    15.023 r  clock/count_reg[20]_i_1/O[0]
+                         net (fo=1, routed)           0.000    15.023    clock/count_reg[20]_i_1_n_7
     SLICE_X65Y23         FDCE                                         r  clock/count_reg[20]/D
   -------------------------------------------------------------------    -------------------
 
@@ -756,11 +756,11 @@ Slack (MET) :             5.113ns  (required time - arrival time)
     SLICE_X65Y23         FDCE (Setup_fdce_C_D)        0.065    20.149    clock/count_reg[20]
   -------------------------------------------------------------------
                          required time                         20.149    
-                         arrival time                         -15.036    
+                         arrival time                         -15.023    
   -------------------------------------------------------------------
-                         slack                                  5.113    
+                         slack                                  5.126    
 
-Slack (MET) :             5.117ns  (required time - arrival time)
+Slack (MET) :             5.130ns  (required time - arrival time)
   Source:                 clock/count_reg[26]/C
                             (falling edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
   Destination:            clock/count_reg[17]/D
@@ -768,7 +768,7 @@ Slack (MET) :             5.117ns  (required time - arrival time)
   Path Group:             sys_clk_pin
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            10.000ns  (sys_clk_pin fall@15.000ns - sys_clk_pin fall@5.000ns)
-  Data Path Delay:        4.894ns  (logic 2.039ns (41.667%)  route 2.855ns (58.333%))
+  Data Path Delay:        4.880ns  (logic 2.039ns (41.780%)  route 2.841ns (58.219%))
   Logic Levels:           8  (CARRY4=5 LUT2=1 LUT6=2)
   Clock Path Skew:        -0.019ns (DCD - SCD + CPR)
     Destination Clock Delay (DCD):    4.846ns = ( 19.846 - 15.000 ) 
@@ -797,24 +797,24 @@ Slack (MET) :             5.117ns  (required time - arrival time)
     SLICE_X64Y22         LUT6 (Prop_lut6_I4_O)        0.124    11.725 f  clock/s_1hz_i_6/O
                          net (fo=1, routed)           0.798    12.523    clock/s_1hz_i_6_n_0
     SLICE_X64Y20         LUT6 (Prop_lut6_I3_O)        0.124    12.647 f  clock/s_1hz_i_2/O
-                         net (fo=29, routed)          1.054    13.701    clock/load
-    SLICE_X65Y18         LUT2 (Prop_lut2_I1_O)        0.124    13.825 r  clock/count[0]_i_6/O
-                         net (fo=1, routed)           0.000    13.825    clock/count[0]_i_6_n_0
+                         net (fo=29, routed)          1.041    13.688    clock/load
+    SLICE_X65Y18         LUT2 (Prop_lut2_I1_O)        0.124    13.812 r  clock/count[0]_i_6/O
+                         net (fo=1, routed)           0.000    13.812    clock/count[0]_i_6_n_0
     SLICE_X65Y18         CARRY4 (Prop_carry4_S[0]_CO[3])
-                                                      0.532    14.357 r  clock/count_reg[0]_i_1/CO[3]
-                         net (fo=1, routed)           0.000    14.357    clock/count_reg[0]_i_1_n_0
+                                                      0.532    14.344 r  clock/count_reg[0]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    14.344    clock/count_reg[0]_i_1_n_0
     SLICE_X65Y19         CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.114    14.471 r  clock/count_reg[4]_i_1/CO[3]
-                         net (fo=1, routed)           0.000    14.471    clock/count_reg[4]_i_1_n_0
+                                                      0.114    14.458 r  clock/count_reg[4]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    14.458    clock/count_reg[4]_i_1_n_0
     SLICE_X65Y20         CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.114    14.585 r  clock/count_reg[8]_i_1/CO[3]
-                         net (fo=1, routed)           0.000    14.585    clock/count_reg[8]_i_1_n_0
+                                                      0.114    14.572 r  clock/count_reg[8]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    14.572    clock/count_reg[8]_i_1_n_0
     SLICE_X65Y21         CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.114    14.699 r  clock/count_reg[12]_i_1/CO[3]
-                         net (fo=1, routed)           0.000    14.699    clock/count_reg[12]_i_1_n_0
+                                                      0.114    14.686 r  clock/count_reg[12]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    14.686    clock/count_reg[12]_i_1_n_0
     SLICE_X65Y22         CARRY4 (Prop_carry4_CI_O[1])
-                                                      0.334    15.033 r  clock/count_reg[16]_i_1/O[1]
-                         net (fo=1, routed)           0.000    15.033    clock/count_reg[16]_i_1_n_6
+                                                      0.334    15.020 r  clock/count_reg[16]_i_1/O[1]
+                         net (fo=1, routed)           0.000    15.020    clock/count_reg[16]_i_1_n_6
     SLICE_X65Y22         FDCE                                         r  clock/count_reg[17]/D
   -------------------------------------------------------------------    -------------------
 
@@ -832,11 +832,11 @@ Slack (MET) :             5.117ns  (required time - arrival time)
     SLICE_X65Y22         FDCE (Setup_fdce_C_D)        0.065    20.150    clock/count_reg[17]
   -------------------------------------------------------------------
                          required time                         20.150    
-                         arrival time                         -15.033    
+                         arrival time                         -15.020    
   -------------------------------------------------------------------
-                         slack                                  5.117    
+                         slack                                  5.130    
 
-Slack (MET) :             5.138ns  (required time - arrival time)
+Slack (MET) :             5.151ns  (required time - arrival time)
   Source:                 clock/count_reg[26]/C
                             (falling edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
   Destination:            clock/count_reg[19]/D
@@ -844,7 +844,7 @@ Slack (MET) :             5.138ns  (required time - arrival time)
   Path Group:             sys_clk_pin
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            10.000ns  (sys_clk_pin fall@15.000ns - sys_clk_pin fall@5.000ns)
-  Data Path Delay:        4.873ns  (logic 2.018ns (41.416%)  route 2.855ns (58.584%))
+  Data Path Delay:        4.859ns  (logic 2.018ns (41.529%)  route 2.841ns (58.471%))
   Logic Levels:           8  (CARRY4=5 LUT2=1 LUT6=2)
   Clock Path Skew:        -0.019ns (DCD - SCD + CPR)
     Destination Clock Delay (DCD):    4.846ns = ( 19.846 - 15.000 ) 
@@ -873,24 +873,24 @@ Slack (MET) :             5.138ns  (required time - arrival time)
     SLICE_X64Y22         LUT6 (Prop_lut6_I4_O)        0.124    11.725 f  clock/s_1hz_i_6/O
                          net (fo=1, routed)           0.798    12.523    clock/s_1hz_i_6_n_0
     SLICE_X64Y20         LUT6 (Prop_lut6_I3_O)        0.124    12.647 f  clock/s_1hz_i_2/O
-                         net (fo=29, routed)          1.054    13.701    clock/load
-    SLICE_X65Y18         LUT2 (Prop_lut2_I1_O)        0.124    13.825 r  clock/count[0]_i_6/O
-                         net (fo=1, routed)           0.000    13.825    clock/count[0]_i_6_n_0
+                         net (fo=29, routed)          1.041    13.688    clock/load
+    SLICE_X65Y18         LUT2 (Prop_lut2_I1_O)        0.124    13.812 r  clock/count[0]_i_6/O
+                         net (fo=1, routed)           0.000    13.812    clock/count[0]_i_6_n_0
     SLICE_X65Y18         CARRY4 (Prop_carry4_S[0]_CO[3])
-                                                      0.532    14.357 r  clock/count_reg[0]_i_1/CO[3]
-                         net (fo=1, routed)           0.000    14.357    clock/count_reg[0]_i_1_n_0
+                                                      0.532    14.344 r  clock/count_reg[0]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    14.344    clock/count_reg[0]_i_1_n_0
     SLICE_X65Y19         CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.114    14.471 r  clock/count_reg[4]_i_1/CO[3]
-                         net (fo=1, routed)           0.000    14.471    clock/count_reg[4]_i_1_n_0
+                                                      0.114    14.458 r  clock/count_reg[4]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    14.458    clock/count_reg[4]_i_1_n_0
     SLICE_X65Y20         CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.114    14.585 r  clock/count_reg[8]_i_1/CO[3]
-                         net (fo=1, routed)           0.000    14.585    clock/count_reg[8]_i_1_n_0
+                                                      0.114    14.572 r  clock/count_reg[8]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    14.572    clock/count_reg[8]_i_1_n_0
     SLICE_X65Y21         CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.114    14.699 r  clock/count_reg[12]_i_1/CO[3]
-                         net (fo=1, routed)           0.000    14.699    clock/count_reg[12]_i_1_n_0
+                                                      0.114    14.686 r  clock/count_reg[12]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    14.686    clock/count_reg[12]_i_1_n_0
     SLICE_X65Y22         CARRY4 (Prop_carry4_CI_O[3])
-                                                      0.313    15.012 r  clock/count_reg[16]_i_1/O[3]
-                         net (fo=1, routed)           0.000    15.012    clock/count_reg[16]_i_1_n_4
+                                                      0.313    14.999 r  clock/count_reg[16]_i_1/O[3]
+                         net (fo=1, routed)           0.000    14.999    clock/count_reg[16]_i_1_n_4
     SLICE_X65Y22         FDCE                                         r  clock/count_reg[19]/D
   -------------------------------------------------------------------    -------------------
 
@@ -908,11 +908,11 @@ Slack (MET) :             5.138ns  (required time - arrival time)
     SLICE_X65Y22         FDCE (Setup_fdce_C_D)        0.065    20.150    clock/count_reg[19]
   -------------------------------------------------------------------
                          required time                         20.150    
-                         arrival time                         -15.012    
+                         arrival time                         -14.999    
   -------------------------------------------------------------------
-                         slack                                  5.138    
+                         slack                                  5.151    
 
-Slack (MET) :             5.212ns  (required time - arrival time)
+Slack (MET) :             5.225ns  (required time - arrival time)
   Source:                 clock/count_reg[26]/C
                             (falling edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
   Destination:            clock/count_reg[18]/D
@@ -920,7 +920,7 @@ Slack (MET) :             5.212ns  (required time - arrival time)
   Path Group:             sys_clk_pin
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            10.000ns  (sys_clk_pin fall@15.000ns - sys_clk_pin fall@5.000ns)
-  Data Path Delay:        4.799ns  (logic 1.944ns (40.513%)  route 2.855ns (59.487%))
+  Data Path Delay:        4.785ns  (logic 1.944ns (40.625%)  route 2.841ns (59.375%))
   Logic Levels:           8  (CARRY4=5 LUT2=1 LUT6=2)
   Clock Path Skew:        -0.019ns (DCD - SCD + CPR)
     Destination Clock Delay (DCD):    4.846ns = ( 19.846 - 15.000 ) 
@@ -949,24 +949,24 @@ Slack (MET) :             5.212ns  (required time - arrival time)
     SLICE_X64Y22         LUT6 (Prop_lut6_I4_O)        0.124    11.725 f  clock/s_1hz_i_6/O
                          net (fo=1, routed)           0.798    12.523    clock/s_1hz_i_6_n_0
     SLICE_X64Y20         LUT6 (Prop_lut6_I3_O)        0.124    12.647 f  clock/s_1hz_i_2/O
-                         net (fo=29, routed)          1.054    13.701    clock/load
-    SLICE_X65Y18         LUT2 (Prop_lut2_I1_O)        0.124    13.825 r  clock/count[0]_i_6/O
-                         net (fo=1, routed)           0.000    13.825    clock/count[0]_i_6_n_0
+                         net (fo=29, routed)          1.041    13.688    clock/load
+    SLICE_X65Y18         LUT2 (Prop_lut2_I1_O)        0.124    13.812 r  clock/count[0]_i_6/O
+                         net (fo=1, routed)           0.000    13.812    clock/count[0]_i_6_n_0
     SLICE_X65Y18         CARRY4 (Prop_carry4_S[0]_CO[3])
-                                                      0.532    14.357 r  clock/count_reg[0]_i_1/CO[3]
-                         net (fo=1, routed)           0.000    14.357    clock/count_reg[0]_i_1_n_0
+                                                      0.532    14.344 r  clock/count_reg[0]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    14.344    clock/count_reg[0]_i_1_n_0
     SLICE_X65Y19         CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.114    14.471 r  clock/count_reg[4]_i_1/CO[3]
-                         net (fo=1, routed)           0.000    14.471    clock/count_reg[4]_i_1_n_0
+                                                      0.114    14.458 r  clock/count_reg[4]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    14.458    clock/count_reg[4]_i_1_n_0
     SLICE_X65Y20         CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.114    14.585 r  clock/count_reg[8]_i_1/CO[3]
-                         net (fo=1, routed)           0.000    14.585    clock/count_reg[8]_i_1_n_0
+                                                      0.114    14.572 r  clock/count_reg[8]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    14.572    clock/count_reg[8]_i_1_n_0
     SLICE_X65Y21         CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.114    14.699 r  clock/count_reg[12]_i_1/CO[3]
-                         net (fo=1, routed)           0.000    14.699    clock/count_reg[12]_i_1_n_0
+                                                      0.114    14.686 r  clock/count_reg[12]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    14.686    clock/count_reg[12]_i_1_n_0
     SLICE_X65Y22         CARRY4 (Prop_carry4_CI_O[2])
-                                                      0.239    14.938 r  clock/count_reg[16]_i_1/O[2]
-                         net (fo=1, routed)           0.000    14.938    clock/count_reg[16]_i_1_n_5
+                                                      0.239    14.925 r  clock/count_reg[16]_i_1/O[2]
+                         net (fo=1, routed)           0.000    14.925    clock/count_reg[16]_i_1_n_5
     SLICE_X65Y22         FDCE                                         r  clock/count_reg[18]/D
   -------------------------------------------------------------------    -------------------
 
@@ -984,9 +984,9 @@ Slack (MET) :             5.212ns  (required time - arrival time)
     SLICE_X65Y22         FDCE (Setup_fdce_C_D)        0.065    20.150    clock/count_reg[18]
   -------------------------------------------------------------------
                          required time                         20.150    
-                         arrival time                         -14.938    
+                         arrival time                         -14.925    
   -------------------------------------------------------------------
-                         slack                                  5.212    
+                         slack                                  5.225    
 
 
 

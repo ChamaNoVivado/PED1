@@ -1,8 +1,8 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Thu Oct 21 13:31:06 2021
-| Host         : Pedroo running 64-bit major release  (build 9200)
+| Date         : Thu Oct 21 21:17:09 2021
+| Host         : DESKTOP-0VQB5DC running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file main_counter_async_0toF_control_sets_placed.rpt
 | Design       : main_counter_async_0toF
 | Device       : xc7a35t
@@ -74,9 +74,9 @@ Table of Contents
 |    Clock Signal    | Enable Signal | Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
 +--------------------+---------------+------------------+------------------+----------------+--------------+
 | ~clock/clk_counter |               | Rst_IBUF         |                1 |              1 |         1.00 |
-|  ffA/sA            |               | Rst_IBUF         |                1 |              1 |         1.00 |
-|  ffB/sB            |               | Rst_IBUF         |                1 |              1 |         1.00 |
-|  ffC/sC            |               | Rst_IBUF         |                1 |              1 |         1.00 |
+|  ffA/s             |               | Rst_IBUF         |                1 |              1 |         1.00 |
+|  ffB/s_reg_0       |               | Rst_IBUF         |                1 |              1 |         1.00 |
+|  ffC/s_reg_0       |               | Rst_IBUF         |                1 |              1 |         1.00 |
 | ~clk_IBUF_BUFG     |               | Rst_IBUF         |                8 |             28 |         3.50 |
 +--------------------+---------------+------------------+------------------+----------------+--------------+
 
